@@ -15,6 +15,20 @@ The game gives the player many options as the student avatar is persuing college
 
 Features to implement:
 
+Factors that the player is suggested to consider:
+1. energy level
+2. obligatory courses need to be taken(time consumption)
+3. personal development 
+
+Factors that may affect the student avatar's lifepath:
+1. GPA transcript
+2. internship experience
+3. experience of joining clubs or organizations
+4. volunteering experience
+5. reference letters
+6. networking and social circles
+7. leadership, creativity or innovation
+
 explain 1-5 coding requirements
 
 1. generation of random game events
