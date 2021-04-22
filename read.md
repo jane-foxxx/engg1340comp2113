@@ -36,35 +36,35 @@ In-code documentation
 Some features implemented fulfill the coding requirements
 
 1.Generation of random game sets or event
+
    1. use srand() and rand() for initializing the random number generator for key integer in the Caesar ciper
 
 2.Data structures for storing game status:
 
-  1.Initializing one struct to store information of the player
+   1.Initializing one struct to store information of the player
 
-  2.Initializing the int variables of time and physical energy under the struct 
+   2.Initializing the int variables of time and physical energy under the struct 
 
-  3.Initializing the one string vector for storing tools founded under the struct
+   3.Initializing the one string vector for storing tools founded under the struct
 
-  4.Initializing the string variable for the sentence that needed to decrypt
+   4.Initializing the string variable for the sentence that needed to decrypt
 
 3.Dynamic memory management
-
 
    1.User the string vector to store props founded through the game
 
 4.File input/output 
 
-  1.input.txt contains the random input factors
+   1.input.txt contains the random input factors
 
-  2.output.txt contains the results of the random input factors.
+   2.output.txt contains the results of the random input factors.
 
 5.Program codes in multiple files
 
-  1.head.cpp
+   1.head.cpp
 
-  2.main.cpp
+   2.main.cpp
 
-  3.waiting for implementing...
+   3.waiting for implementing...
 
 # Compilation and execution instructions:
