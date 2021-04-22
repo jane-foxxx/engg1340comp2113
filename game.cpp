@@ -10,7 +10,16 @@ who did not escape before the dawn will die in reality
 
 using namespace std;
 
-void fightguardian(bool weapon, int hp){
+void print_death_reason(bool weapon, int hp, int countdown){
+    cout << "The guardian beat you since your physical energy is not enough" << endl;
+}
+
+void current_value(bool weapon, int hp, int countdown){
+    cout << "health point is " << hp << endl;
+    cout << "time is up" << endl;
+}
+
+bool fightguardian(bool weapon, int hp){
 	if(hp >= 5 && weapon == true){
 		return true;
 	}
@@ -19,18 +28,18 @@ void fightguardian(bool weapon, int hp){
 
 int main() {
 	
-	/*
-	player is playing inside the helmet, the sight went white, then inside a tower
-	moonlight lean in, the electrical voice starts:
-	"
-	dear player, welcome to nightmare!
-	the counting down is 4 hours
-	remember to stay away from the guardians, escape from the tower and head towards the east.
-	escape the nightmare before the dawn which is crossing the river!
-	the conseqquence of failing to escape is that you will sleep forever in reality.
+	cout<<"As you are playing the virtual reality game, the sight suddenly becomes white, 
+    after few seconds, you get your sight back and then find that you are inside a room with some moonlight, the electrical voice starts:"<<endl;
+    cout<<"
+	dear player, welcome to nightmare game!\n
+	You should run to east and finally cross the river which is the boundary of the nightmare space before the dawn coming...\n
+    Otherwise you will fall into eternal sleep in reality.\n
+	Please try to stay away from the guardians because as soon as you fail to beat him, you will lose life.\n
+    Besides that, remember to use the props you found through the game correctly. They can help you eacspe the nightmare succcessfully.
+    There are 120 minutes before the dawn coming.\n
 	try to wake up and good luck!
-	"
-	*/
+	"<<endl;
+	
 	
 	bool flag = true;
 	while (flag = true){
@@ -39,7 +48,7 @@ int main() {
 		// when hp >= 5, player can beat the guardian
 		
 		const double halfhour = 0.5;
-		double countdown = 0.0; // totally 4 h, every choice 30 min
+		double countdown = 0.0; // totally 2 h
 		//death reset the time back to zero
 		
 		bool weapon = false;
