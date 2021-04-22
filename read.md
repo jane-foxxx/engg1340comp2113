@@ -51,6 +51,7 @@ Some features implemented fulfill the coding requirements
 
 3.Dynamic memory management
 
+
    1.User the string vector to store props founded through the game
 
 4.File input/output 
