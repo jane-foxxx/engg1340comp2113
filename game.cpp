@@ -11,7 +11,10 @@ who did not escape before the dawn will die in reality
 using namespace std;
 
 void fightguardian(bool weapon, int hp){
-	
+	if(hp >= 5 && weapon == true){
+		return true;
+	}
+	return false;
 }
 
 int main() {
