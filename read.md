@@ -14,7 +14,7 @@ The initial physical energy value of each player is 5 units. If the physical ene
 
 During the game, the player will get useful props in the room, thus deciding how to use the props will be one of the critical factors in successfully escaping the game.
 
-Apart from that, the player also need to pass one chanllege--Caesar cipher, the player is required to decrypt one sentence according to the given information to escape the tower. The player has 3 chances to solve this cipher.
+Apart from that, the player also need to pass one chanllege--Caesar cipher, this is a kind of substitution cipher. Instead of using a substitution table, the alphabets are rotated by a number (a key). For example, if the key is 3, plaintext alphabet a would become d, and plaintext alphabet z would become c. The player is required to decrypt one sentence according to the given information to escape the tower and there are 3 chances to solve this cipher.
 
 # 1-5 coding requirements:
 
