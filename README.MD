@@ -39,7 +39,7 @@ Some features implemented to fulfill the 1-5 coding requirements
 
    1. use srand() and rand() for initializing the random number generator for key integer in the Caesar cipher
 
-2. Data structures for storing game status:
+2. Data structures for storing game status
 
    1. Initializing one struct to store information of the player
 
