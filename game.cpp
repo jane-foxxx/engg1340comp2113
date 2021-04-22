@@ -1,56 +1,69 @@
-/*
-background:
-interstellar times, players use helmet and get infected, stuck in the nightmare
-player need to escape from the nightmare before the dawn
-who did not escape before the dawn will die in reality
-*/
-
-
-
-
 #include <iostream>
 
 using namespace std;
 
-void print_death_reason(bool weapon, int hp, int countdown){
-    cout << "The guardian beat you since your physical energy is not enough" << endl;
+//print the death reason for each death
+void print_death_reason(int hp,int countdown, bool weapon){
+	//hp <= 0
+	
+	//player is defeated by the guardian
+	cout << "The guardian beat you since your physical energy is not enough" << endl;
+	
+	//countdown > 70
+	
 }
 
-void current_value(bool weapon, int hp, int countdown){
-    cout << "health point is " << hp << endl;
-    cout << "time is up" << endl;
+//print the current states of the player so that the player can make more choice
+void print_current_value(int hp,int countdown, bool weapon){
+	//hp
+	cout << "health point is " << hp << endl;
+	//count down
+	
+	//weapon
+	
 }
 
-bool fightguardian(bool weapon, int hp){
+//the action of fighting with the guardian
+//true means the player defeat the guardian and survive, and health point will decrease by 3
+//false means the player is defeated and die
+bool fightguardian(bool weapon, int &hp){
 	if(hp >= 5 && weapon == true){
+		hp -= 3;
 		return true;
 	}
+	hp = 0;
 	return false;
 }
 
 int main() {
 	
-	cout<<"As you are playing the virtual reality game, the sight suddenly becomes white, 
-    after few seconds, you get your sight back and then find that you are inside a room with some moonlight, the electrical voice starts:"<<endl;
-    cout<<"
-	dear player, welcome to nightmare game!\n
-	You should run to east and finally cross the river which is the boundary of the nightmare space before the dawn coming...\n
-    Otherwise you will fall into eternal sleep in reality.\n
-	Please try to stay away from the guardians because as soon as you fail to beat him, you will lose life.\n
-    Besides that, remember to use the props you found through the game correctly. They can help you eacspe the nightmare succcessfully.
-    There are 120 minutes before the dawn coming.\n
-	try to wake up and good luck!
-	"<<endl;
+	//background explanation
+	cout << "INTERSTELLAR LOG UPDATE:" << endl;
+	cout << "-------------------------------------------------------------" << endl;
+	cout << "Time: A.D. 2049" << endl;
+	cout << "Infection Reason: Virtual reality is infected" << endl;
+	cout << "Current Situation: Stuck in the NIGHTMARE" << endl;
+	cout << "Analysis: Death in NIGHTMARE directly causes death in reality" << endl;
+	cout << "Suggestion: YOU need to escape before the dawn" << endl;
+	cout << "-------------------------------------------------------------" << endl;
+
+	//story telling and game instruction
+	cout << "Current Situation Update: " << endl;
+	cout << "The sight suddenly goes white." << endl;
+	cout << "After few seconds, you can see and find that you are in a room with some moonlight leaning in." << endl;
+	/*
+	the electrical voice starts:
+	Dear player, welcome to NIGHTMARE! The simple instruction is to run towards east and cross the river which is the boundary of the nightmare space before the dawn coming... Otherwise you will fall into eternal sleep in reality. Please try to stay away from the guardians because as soon as you fail to defeat him, you will lost in your dream too. Besides, remember to use the props you found through the game correctly. They can help you escape from NIGHTMARE successfully. There are 120 minutes before the dawn coming. Try to wake up and good luck!
+	*/
 	
-	
+	//the game starts!
 	bool flag = true;
-	while (flag = true){
+	while (flag == true){
 		int hp = 5; // for fighting with the guardian
 		// the primitive hp is 5
 		// when hp >= 5, player can beat the guardian
 		
-		const double halfhour = 0.5;
-		double countdown = 0.0; // totally 2 h
+		int countdown = 0; // totally 120 minutes, 1 unit of countdown = 5 minutes
 		//death reset the time back to zero
 		
 		bool weapon = false;
@@ -66,7 +79,7 @@ int main() {
 		char a;
 		cin >> a;
 		if (a == 'A'){
-			countdown += halfhour;
+			countdown += 1;
 			// nothing happened, but wait half an hour
 		}
 		else if (a == 'B'){
@@ -74,7 +87,7 @@ int main() {
 		}
 		else if (a == 'C'){
 			hp -= 1;
-			fightguardian();
+			fightguardian(weapon, hp);
 			// the sound of moving the table calls the guadian, you are beaten by him and trapped by him until the dawn came.
 			/* 
 			did not wake up, you die! do you want to re-enter the nightmare?
@@ -143,7 +156,7 @@ int main() {
 				weapon = true;
 			}
 			else if(c == 'C'){
-				fightguardian();
+				fightguardian(weapon, hp);
 				// guardain
 				/* 
 				did not wake up, you die! do you want to re-enter the nightmare?
@@ -165,7 +178,7 @@ int main() {
 			}
 		}
 		else if(c == 'C'){
-			fightguardian();
+			fightguardian(weapon, hp);
 			// guardain
 			/* 
 			did not wake up, you die! do you want to re-enter the nightmare?
