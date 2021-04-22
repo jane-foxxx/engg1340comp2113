@@ -39,6 +39,7 @@ Some features implemented fulfill the coding requirements
    1. use srand() and rand() for initializing the random number generator for key integer in the Caesar ciper
 
 2.Data structures for storing game status:
+
   1.Initializing one struct to store information of the player
 
   2.Initializing the int variables of time and physical energy under the struct 
