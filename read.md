@@ -37,17 +37,17 @@ Some features implemented fulfill the coding requirements
 
 1.Generation of random game sets or event
 
-   1. use srand() and rand() for initializing the random number generator for key integer in the Caesar ciper
+   1. use srand() and rand() for initializing the random number generator for key integer in the Caesar cipher
 
 2.Data structures for storing game status:
 
-   1.Initializing one struct to store information of the player
+   1. Initializing one struct to store information of the player
 
-   2.Initializing the int variables of time and physical energy under the struct 
+   2. Initializing the int variables of time and physical energy under the struct 
 
-   3.Initializing the one string vector for storing tools founded under the struct
+   3. Initializing the one string vector for storing tools founded under the struct
 
-   4.Initializing the string variable for the sentence that needed to decrypt
+   4. Initializing the string variable for the sentence that needed to decrypt
 
 3.Dynamic memory management
 
