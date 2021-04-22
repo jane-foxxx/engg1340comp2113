@@ -18,22 +18,22 @@ Apart from that, the player also need to pass one chanllege--Caesar cipher, this
 
 # 1-5 coding requirements:
 
-Generation of random game sets or events
+1. Generation of random game sets or events
 
-Data structures for storing game status
+2. Data structures for storing game status
 
-Dynamic memory management
+3. Dynamic memory management
 
-File input/output (e.g., for loading/saving game status)
+4. File input/output (e.g., for loading/saving game status)
 
-Program codes in multiple files
+5. Program codes in multiple files
 
-Proper indentation and naming styles
+6. Proper indentation and naming styles
 
-In-code documentation
+7. In-code documentation
 
 # Features to implement:
-Some features implemented fulfill the coding requirements
+Some features implemented to fulfill the 1-5 coding requirements
 
 1. Generation of random game sets or event
 
