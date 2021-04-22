@@ -10,7 +10,7 @@ who did not escape before the dawn will die in reality
 
 using namespace std;
 
-void fightguardian(){
+void fightguardian(bool weapon, int hp){
 	
 }
 
@@ -21,7 +21,7 @@ int main() {
 	moonlight lean in, the electrical voice starts:
 	"
 	dear player, welcome to nightmare!
-	the counting down is 5 hours.
+	the counting down is 4 hours
 	remember to stay away from the guardians, escape from the tower and head towards the east.
 	escape the nightmare before the dawn which is crossing the river!
 	the conseqquence of failing to escape is that you will sleep forever in reality.
@@ -31,12 +31,13 @@ int main() {
 	
 	bool flag = true;
 	while (flag = true){
-		int hp = 5; // for fighting or climbing 
+		int hp = 5; // for fighting with the guardian
 		// the primitive hp is 5
-		// when hp < 5, can NOT fight the guardian
+		// when hp >= 5, player can beat the guardian
 		
-		double time = 0.0; // totally 40 min, every choice 5 min
-		//8 wrong choice = death
+		const double halfhour = 0.5;
+		double countdown = 0.0; // totally 4 h, every choice 30 min
+		//death reset the time back to zero
 		
 		bool weapon = false;
 		
@@ -51,7 +52,8 @@ int main() {
 		char a;
 		cin >> a;
 		if (a == 'A'){
-			// nothing happened in 5 minutes
+			countdown += halfhour;
+			// nothing happened, but wait half an hour
 		}
 		else if (a == 'B'){
 			// nothing is outside the door
@@ -74,7 +76,7 @@ int main() {
 			}
 			else if (die == 'B'){
 				//sayonala
-				flag = fasle;
+				flag = false;
 				break;
 			}
 			
@@ -112,6 +114,7 @@ int main() {
 		}
 		else if (c == 'B'){
 			//nothing in ground floor
+			hp -= 1;
 			/*
 			there is another closing door and a staircase
 			CHOOSE----------
@@ -142,7 +145,7 @@ int main() {
 				}
 				else if (die == 'B'){
 					//sayonala
-					flag = fasle;
+					flag = false;
 					break;
 				}
 			}
@@ -164,7 +167,7 @@ int main() {
 			}
 			else if (die == 'B'){
 				//sayonala
-				flag = fasle;
+				flag = false;
 				break;
 			}
 		}
