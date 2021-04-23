@@ -1,0 +1,88 @@
+INTERSTELLAR LOG UPDATE:
+-------------------------------------------------------------
+Time: A.D. 2049
+Infection Reason: Virtual reality is infected
+Current Situation: Stuck in the NIGHTMARE
+Analysis: Death in NIGHTMARE directly causes death in reality
+Suggestion: YOU need to escape before the dawn (in 70 MINUTES)
+Remember to stay away from the guardian!
+-------------------------------------------------------------
+Current Situation Update: 
+The sight suddenly goes white.
+After few seconds, you can see and find that you are in a room with some moonlight leaning in.
+health point: 5
+time left: 70 min
+weapon: none
+A bread is on the table in front of you, and the door near the table is squeezing.
+CHOOSE----------
+A. wait and see
+B. open the door
+C. use table to block the door
+please input your choice: B
+Nothing is outside the door~
+health point: 5
+time left: 65 min
+weapon: none
+So you calm down and back to the table.
+CHOOSE----------
+A. eat the bread and leave the room
+B. just leave the room
+please input your choice: A
+Yummy~
+health point: 6
+time left: 55 min
+weapon: none
+There is another closing door and staircases.
+CHOOSE----------
+A. go to the third floor
+B. go to the ground floor
+C. try to open the closing door
+please input your choice: A
+There is an empty room with only one stick lying on the ground.
+You pick up the stick.
+health point: 6
+time left: 50 min
+weapon: stick
+Do you want to challenge the guardian or back to the ground floor?
+CHOOSE----------
+A. challenge the guardian
+B. go back to the ground floor
+please input your choice: A
+You win!!! You are inevitable!
+health point: 3
+time left: 40 min
+weapon: stick
+You go into the guardian's room and find a few things.
+Now you have to choose 3 items out of 4, since your bag is not big enough.
+a lamp    a can of ham    a stick    a compass
+CHOOSE----------
+A. a lamp
+B. a can of ham
+C. a stick
+D. a compass
+please input your choice: A B D
+health point: 3
+time left: 35 min
+weapon: none
+You take the lamp and go to the ground floor.
+There is a door, but only go through the game successfully can open the door.
+Now you finally found the door with the help of the light, and you found a line engraved on the door————
+
+Only the person who addresses this cipher can open the door.
+The is one sample left by last person who open the door successfully:
+Key number is -3
+Encrypted sentence:
+Hbbm cfdeqfkd ql tfk!
+Decrypted password:
+Keeping fight to win!
+Now please use your wise to solve this cipher question!
+Key number = -25
+Encrypted sentence is FOHH1340!
+Please input your decrypted password: ENGG1340!
+Congratulation! You pass it!
+health point: 3
+time left: 30 min
+weapon: none
+With the compass, you find the way out and stop in front of a river.
+You eat the ham and swim across the river successfully!
+Welcome back to the reality!
