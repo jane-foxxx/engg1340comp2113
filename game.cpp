@@ -550,8 +550,7 @@ int main() {
 			
 	}//while end
 	
-	
-	
+
 	
 }//main end
 	
