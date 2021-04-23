@@ -1,9 +1,7 @@
-
 #include <iostream>
 #include <string>
 #include <stdlib.h>
 #include <time.h>
-#include <vector>
 
 using namespace std;
 
