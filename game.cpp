@@ -1,6 +1,22 @@
+
+#include <vector>
 #include <iostream>
+#include <string>
+#include <stdlib.h>
+#include <time.h>
 
 using namespace std;
+
+//the action of fighting with the guardian
+//true means the player defeat the guardian and survive, and health point will decrease by 3
+//false means the player is defeated and die
+bool fightguardian(bool weapon, int &hp){
+	if(hp >= 5 && weapon == true){
+		return true;
+	}
+	hp = 0;
+	return false;
+}
 
 //print the death reason for each death
 void print_death_reason(int hp,int countdown, bool weapon){
@@ -13,7 +29,7 @@ void print_death_reason(int hp,int countdown, bool weapon){
 		cout << "You were defeated by the guardian because you do not have weapon or your health point is lower than 5" << endl;
 	}
 	//countdown > 70
-	if (coutdown >70){
+	if (countdown >70){
 		cout << "You failed to escape from NIGHTMARE BEFORE the dawn!" << endl;
 	}
 }
@@ -23,14 +39,24 @@ void print_current_value(int hp,int countdown, bool weapon){
 	//hp
 	cout << "health point: " << hp << endl;
 	//count down
-	cout << "time left: " << (70-countdown) << "min" << endl;
+	cout << "time left: " << (70-countdown) << " min" << endl;
 	//weapon
 	if(weapon == true){
-		cout << "you do have a stick in your bag" << endl;
+		cout << "weapon: stick" << endl;
 	}
 	else if (weapon == false){
-		cout << "it seems that you cannot defeat the guardian" << endl;
+		cout << "weapon: none" << endl;
 	}
+}
+
+//ask the player if play again
+void ask_death(int hp, int countdown, bool weapon){
+	cout << "YOU DIED!!!" << endl;
+	print_death_reason(hp, countdown, weapon);
+	cout << "Do you want to re-enter NIGHTMARE or just die :)" << endl;
+	cout << "CHOOSE----------" << endl;
+	cout << "A. try again" << endl;
+	cout << "B. exit" << endl;
 }
 
 //print death announce for failure in the game
@@ -39,17 +65,155 @@ void print_death(){
 	cout << "WE WISH YOU GOOD HELL :)" << endl;
 }
 
-//the action of fighting with the guardian
-//true means the player defeat the guardian and survive, and health point will decrease by 3
-//false means the player is defeated and die
-bool fightguardian(bool weapon, int &hp){
-	if(hp >= 5 && weapon == true){
-		hp -= 3;
-		return true;
+//the encryption game!!!
+int game(){
+	// set random key number 
+	srand((unsigned)time(NULL)); 
+
+	// test range , random number is between -26 and 26
+	int a = -26;
+	int b = 26;
+	int key = (rand() % (b - a + 1)) + a;
+
+	string input = "ENGG1340!";
+	string data = "abcdefghijklmnopqrstuvwxyz";
+	string data_upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	cout << "Key number = "<< key << endl;
+	
+	string output = "";
+	//Encrypt
+	string::size_type position;
+	string::size_type position1;
+	if (key >= 0){
+		for (int i = 0; i < input.size(); i++){
+			position = data.find(input[i]);
+			position1 = data_upper.find(input[i]);
+			if (position != data.npos || position1 != data_upper.npos){
+				//Encrypt Uppercase letters
+				if (isupper(input[i])){
+					output += char(int(input[i] + key - 65) % 26 + 65);
+				}
+				//Encrypt Lowercase letters
+				else{
+					output += char(int(input[i] + key -97) % 26 + 97);
+				}
+			}
+			else{
+				output += input[i];
+			}
+		}
 	}
-	hp = 0;
-	return false;
+	else{
+		for (int i = 0; i < input.size(); i++){
+			position = data.find(input[i]);
+			position1 = data_upper.find(input[i]);
+			if (position != data.npos || position1 != data_upper.npos){
+				//Encrypt Upper letters
+				if (isupper(input[i])){
+					if (int(key % 26 + input[i]) < 65){
+						output += char(int(key % 26 + 26 + input[i]));
+					}
+					else{
+						output += char(int(key % 26 + input[i])); 
+					}
+				}
+				//Encrypt Lowercase letters
+				else{
+					if (int(key % 26 + input[i]) < 96){
+						output += char(int(key % 26 + 26 + input[i]));
+					}
+					else{
+						output += char(int(key % 26 + input[i])); 
+					}
+				}
+			}
+			else{
+				output += input[i];
+			}
+		}
+	}
+	cout << "encrypted answer is " << output << endl;
+	
+	//Decrypt
+	string input1 = output;
+	string output1;
+	string::size_type position_d;
+	string::size_type position1_d;
+	if (key < 0){
+		for (int i = 0; i < input1.size(); i++){
+			position_d = data.find(input1[i]);
+			position1_d = data_upper.find(input1[i]);
+			if (position_d != data.npos || position1_d != data_upper.npos){
+				//Decrypt Uppercase letters
+				if (isupper(input1[i])){
+					output1 += char(int(input1[i] - key - 65) % 26 + 65);
+				}
+				// Decrypt Lowercase letters
+				else{
+					output1 += char(int(input1[i] - key - 97) % 26 + 97);
+				}
+			}
+			else{
+				output1 += input1[i];
+			}
+		}
+	}
+	else{
+		for (int i = 0; i < input1.size(); i++){
+			position_d = data.find(input1[i]);
+			position1_d = data_upper.find(input1[i]);
+			if (position_d != data.npos || position1_d != data_upper.npos){
+				//Decrypt Upper letters
+				if (isupper(input1[i])){
+					if (int(-key % 26 + input1[i]) < 65){
+						output1 += char(int(-key % 26 + 26 + input1[i]));
+					}
+					else{
+						output1 += char(int(-key % 26 + input1[i])); 
+					}
+				}
+				// Decrypt Lowercase letters
+				else{
+					if (int(-key % 26 + input1[i]) < 96){
+						output1 += char(int(-key % 26 + 26 + input1[i]));
+					}
+					else{
+						output1 += char(int(-key % 26 + input1[i])); 
+					}
+				}
+			}
+			else{
+				output1 += input1[i];
+			}
+		}
+	}
+	string user_input;
+	cin >> user_input;
+	int times = 1;
+	while (true){
+		if (user_input == output1){
+			cout << "Congratulation! You pass it!" << endl;
+			return times;
+			break;
+		}
+		cout << "OMG! Not the correct answer~" << endl;
+		cout << "There are " << 3 - times << " more chances." << endl;
+		cout << "Try again: ";
+		cin >> user_input;
+		if(times == 2){
+			if (user_input == output1){
+				cout << "Congratulation! You pass it!" << endl;
+				return 3;
+				break;
+			}
+			cout << "3 times all wrong" << endl;
+			return 4;
+			break;
+		}
+		times += 1;
+	}
 }
+
 
 int main() {
 	
@@ -61,17 +225,14 @@ int main() {
 	cout << "Current Situation: Stuck in the NIGHTMARE" << endl;
 	cout << "Analysis: Death in NIGHTMARE directly causes death in reality" << endl;
 	cout << "Suggestion: YOU need to escape before the dawn (in 70 MINUTES)" << endl;
-	cout << "Remember to stay away from the guardian!"
+	cout << "Remember to stay away from the guardian!" << endl;
 	cout << "-------------------------------------------------------------" << endl;
 
 	//story telling and game instruction
 	cout << "Current Situation Update: " << endl;
 	cout << "The sight suddenly goes white." << endl;
 	cout << "After few seconds, you can see and find that you are in a room with some moonlight leaning in." << endl;
-	/*
-	the electrical voice starts:
-	Dear player, welcome to NIGHTMARE! The simple instruction is to run towards east and cross the river which is the boundary of the nightmare space before the dawn coming... Otherwise you will fall into eternal sleep in reality. Please try to stay away from the guardians because as soon as you fail to defeat him, you will lost in your dream too. Besides, remember to use the props you found through the game correctly. They can help you escape from NIGHTMARE successfully. There are 120 minutes before the dawn coming. Try to wake up and good luck!
-	*/
+
 	
 	//the game starts!
 	bool flag = true;
@@ -80,13 +241,14 @@ int main() {
 		// the primitive hp is 5
 		// when hp >= 5, player can beat the guardian
 		
-		int countdown = 0; // totally 120 minutes, 1 unit of countdown = 5 minutes
+		int countdown = 0; // totally 70 minutes, 1 unit of countdown = 1 minutes
 		//death reset the time back to zero
 		
 		bool weapon = false;
 		
-		print_current_value(hp, countdown, weapon);
+		vector<string>props;
 		
+		print_current_value(hp, countdown, weapon);
 		//level 1
 		cout << "A bread is on the table in front of you, and the door near the table is squeezing." << endl;
 		cout << "CHOOSE----------" << endl;
@@ -107,14 +269,9 @@ int main() {
 		}
 		else if (a == 'C'){
 			hp -= 1;
-			if(fightguardian(weapon, hp) == flase){
+			if(fightguardian(weapon, hp) == false){
 				cout << "The sound of moving the table invokes the guardian, and you are beaten by him and locked in the room until the dawn came." << endl;
-				cout << "YOU DIED!!!" << endl;
-				print_death_reason(hp, countdown, weapon);
-				cout << "Do you want to re-enter NIGHTMARE or just die :)" << endl;
-				cout << "CHOOSE----------" << endl;
-				cout << "A. try again" << endl;
-				cout << "B. exit" << endl;
+				ask_death(hp, countdown, weapon);
 				char die;
 				cin >> die;
 				if (die == 'A'){
@@ -128,103 +285,273 @@ int main() {
 			}
 		}
 		
+		print_current_value(hp, countdown, weapon);
 		//level 2
-		/*
-		cout <<  "chill and go back for the bread" << endl;
+		cout << "So you calm down and back to the table." << endl;
 		cout << "CHOOSE----------" << endl;
 		cout << "A. eat the bread and leave the room" << endl;
 		cout << "B. just leave the room" << endl;
-		*/
+		cout << "please input your choice: ";
 		char b;
 		cin >> b;
 		if (b == 'A'){
 			hp += 1;
+			countdown += 10;
+			cout << "Yummy~" << endl;
 		}
 		else if (b == 'B'){
-			hp = hp;
+			countdown += 5;
+			cout << "Why don't you eat the bread?" << endl;
 		}
 		
-		/*
-		cout << "there is another closing door and a staircase" << endl;
+		print_current_value(hp, countdown, weapon);
+		//level 3
+		cout << "There is another closing door and staircases." << endl;
 		cout << "CHOOSE----------" << endl;
-		cout << "A. go to the thrid floor" << endl;
+		cout << "A. go to the third floor" << endl;
 		cout << "B. go to the ground floor" << endl;
 		cout << "C. try to open the closing door" << endl;
-		*/
-		
+		cout << "please input your choice: ";
 		char c;
 		cin >> c;
 		if (c == 'A'){
-			//useless room
-			//with stick
+			countdown += 5;
+			cout << "There is an empty room with only one stick lying on the ground." << endl;
+			cout << "You pick up the stick." << endl;
 			weapon = true;
 		}
 		else if (c == 'B'){
-			//nothing in ground floor
-			hp -= 1;
-			/*
-			cout << "there is another closing door and a staircase" << endl;
+			countdown += 5;
+			cout << "There is nothing on the ground floor, you wasted 5 minutes." << endl;
+			cout << "Please choose again:" << endl;
 			cout << "CHOOSE----------" << endl;
-			cout << "A. go to the thrid floor" << endl;
+			cout << "A. go to the third floor" << endl;
 			cout << "C. try to open the closing door" << endl;
-			*/
+			cout << "please input your choice: ";
 			char c1;
 			cin >> c1;
 			if (c1 == 'A'){
-				//useless room
-				//with stick
+				countdown += 5;
+				cout << "There is an empty room with only one stick lying on the ground." << endl;
+				cout << "You pick up the stick." << endl;
 				weapon = true;
 			}
 			else if(c == 'C'){
-				fightguardian(weapon, hp);
-				// guardain
-				/* 
-				cout << "did not wake up, you die! do you want to re-enter the nightmare?" << endl;
-				cout << "CHOOSE----------" << endl;
-				cout << "A. try again" << endl;
-				cout << "B. exit" << endl;
-				*/
-				
+				if(fightguardian(weapon, hp) == false){
+					cout << "You open the door and the guardian is inside if it. And you are defeated by the guardian." << endl;
+					ask_death(hp, countdown, weapon);
+					char die;
+					cin >> die;
+					if (die == 'A'){
+						continue;
+					}
+					else if (die == 'B'){
+						flag = false;
+						print_death();
+						break;
+					}
+				}
+			}
+		}
+		else if(c == 'C'){
+			if(fightguardian(weapon, hp) == false){
+				cout << "You open the door and the guardian is inside if it. And you are defeated by the guardian." << endl;
+				ask_death(hp, countdown, weapon);
 				char die;
 				cin >> die;
 				if (die == 'A'){
 					continue;
 				}
 				else if (die == 'B'){
-					//sayonala
 					flag = false;
+					print_death();
 					break;
 				}
 			}
 		}
-		else if(c == 'C'){
-			fightguardian(weapon, hp);
-			// guardain
-			/* 
-			cout << "did not wake up, you die! do you want to re-enter the nightmare?" << endl;
-			cout << "CHOOSE----------" << endl;
-			cout << "A. try again" << endl;
-			cout << "B. exit" << endl;
-			*/
-			
+		
+		print_current_value(hp, countdown, weapon);
+		//level 4
+		cout << "Do you want to challenge the guardian or back to the ground floor?" << endl;
+		cout << "CHOOSE----------" << endl;
+		cout << "A. challenge the guardian" << endl;
+		cout << "B. go back to the ground floor" << endl;
+		cout << "please input your choice: ";
+		char d;
+		cin >> d;
+		if (d == 'B'){
+			cout << "It is all dark! You can see nothing!" << endl;
+			cout << "So you change your mind and go challenge the guardian." << endl;
+			if(fightguardian(weapon, hp) == false){
+				cout << "You are defeated by the guardian." << endl;
+				ask_death(hp, countdown, weapon);
+				char die;
+				cin >> die;
+				if (die == 'A'){
+					continue;
+				}
+				else if (die == 'B'){
+					flag = false;
+					print_death();
+					break;
+				}
+			}
+			else if(fightguardian(weapon, hp) == true){
+				countdown += 10;
+				cout << "You win!!! You are inevitable!" << endl;
+			}
+		}
+		else if (d == 'A'){
+			if(fightguardian(weapon, hp) == false){
+				cout << "You are defeated by the guardian." << endl;
+				ask_death(hp, countdown, weapon);
+				char die;
+				cin >> die;
+				if (die == 'A'){
+					continue;
+				}
+				else if (die == 'B'){
+					flag = false;
+					print_death();
+					break;
+				}
+			}
+			else if(fightguardian(weapon, hp) == true){
+				hp -= 3;
+				countdown += 10;
+				cout << "You win!!! You are inevitable!" << endl;
+			}
+		}
+		
+		print_current_value(hp, countdown, weapon);
+		//level 5
+		cout << "You go into the guardian's room and find a few things." << endl;
+		cout << "Now you have to choose 3 items out of 4, since your bag is not big enough." << endl;
+		cout << "a lamp    a can of ham    a stick    a compass" << endl;
+		cout << "CHOOSE----------" << endl;
+		cout << "A. a lamp" << endl;
+		cout << "B. a can of ham" << endl;
+		cout << "C. a stick" << endl;
+		cout << "D. a compass" << endl;
+		cout << "please input your choice: ";
+		char e1, e2, e3;
+		cin >> e1;
+		cin >> e2;
+		cin >> e3;
+		if(e1 == 'A' or e2 == 'A' or e3 == 'A'){
+			props.push_back("lamp");
+		}
+		if(e1 == 'B' or e2 == 'B' or e3 == 'B'){
+			props.push_back("ham");
+		}
+		if(e1 == 'C' or e2 == 'C' or e3 == 'C'){
+			props.push_back("stick");
+		}
+		if(e1 == 'D' or e2 == 'D' or e3 == 'D'){
+			props.push_back("compass");
+		}
+		countdown += 5;
+		
+		print_current_value(hp, countdown, weapon);
+		//level 6
+		bool temp = false;
+		for(int i = 0; i < props.size(); i++){
+			if (props[i] == "lamp"){
+				temp = true;
+			}
+		}
+		if(temp == false){
+			cout << "Without the lamp, you are lost in NIGHTMARE :(" << endl;
+			countdown += 100;
+			ask_death(hp, countdown, weapon);
 			char die;
 			cin >> die;
 			if (die == 'A'){
 				continue;
 			}
 			else if (die == 'B'){
-				//sayonala
 				flag = false;
+				print_death();
+				break;
+			}
+		}
+		cout << "You take the lamp and go to the ground floor." << endl;
+		cout << "There is a door, but only go through the game successfully can open the door." << endl;
+		int cc = game();
+		if (cc <= 3){
+			countdown += cc * 5;
+		}
+		else {
+			countdown += 100;
+			ask_death(hp, countdown, weapon);
+			char die;
+			cin >> die;
+			if (die == 'A'){
+				continue;
+			}
+			else if (die == 'B'){
+				flag = false;
+				print_death();
 				break;
 			}
 		}
 		
-		
-		
-		
+		print_current_value(hp, countdown, weapon);
+		//level 7
+		bool temp1 = false;
+		for(int i = 0; i < props.size(); i++){
+			if (props[i] == "compass"){
+				temp1 = true;
+			}
+		}
+		if(temp1 == false){
+			cout << "Without the compass, you are lost in NIGHTMARE :(" << endl;
+			countdown += 100;
+			ask_death(hp, countdown, weapon);
+			char die;
+			cin >> die;
+			if (die == 'A'){
+				continue;
+			}
+			else if (die == 'B'){
+				flag = false;
+				print_death();
+				break;
+			}
+		}
+		cout << "With the compass, you find the way out and stop in front of a river." << endl;
+		bool temp2 = false;
+		for(int i = 0; i < props.size(); i++){
+			if (props[i] == "ham"){
+				temp2 = true;
+				countdown += 20;
+			}
+		}
+		if(temp2 == false){
+			cout << "You drown when you are swimming across the river!" << endl;
+			cout << "tip: hp must be higher than 3 to cross the river." << endl;
+			ask_death(hp, countdown, weapon);
+			char die;
+			cin >> die;
+			if (die == 'A'){
+				continue;
+			}
+			else if (die == 'B'){
+				flag = false;
+				print_death();
+				break;
+			}
+		}
+		cout << "You eat the ham and swim across the river successfully!" << endl;
+		cout << "Thank YOU!" << endl;
+		break;
+			
+			
+			
 	}//while end
 	
 	
 	
 	
 }//main end
+	
