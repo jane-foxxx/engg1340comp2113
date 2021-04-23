@@ -130,10 +130,10 @@ int main() {
 		
 		//level 2
 		/*
-		chill and go back for the bread
-		CHOOSE----------
-		A. eat the bread and leave the room
-		B. just leave the room
+		cout <<  "chill and go back for the bread" << endl;
+		cout << "CHOOSE----------" << endl;
+		cout << "A. eat the bread and leave the room" << endl;
+		cout << "B. just leave the room" << endl;
 		*/
 		char b;
 		cin >> b;
