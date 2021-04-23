@@ -5,22 +5,38 @@ using namespace std;
 //print the death reason for each death
 void print_death_reason(int hp,int countdown, bool weapon){
 	//hp <= 0
-	
+	if(hp <= 0){
+		cout << "You died because of no health point." << endl;
+	}
 	//player is defeated by the guardian
-	cout << "The guardian beat you since your physical energy is not enough" << endl;
-	
+	if(fightguardian(weapon, hp) == false){
+		cout << "You were defeated by the guardian because you do not have weapon or your health point is lower than 5" << endl;
+	}
 	//countdown > 70
-	
+	if (coutdown >70){
+		cout << "You failed to escape from NIGHTMARE BEFORE the dawn!" << endl;
+	}
 }
 
 //print the current states of the player so that the player can make more choice
 void print_current_value(int hp,int countdown, bool weapon){
 	//hp
-	cout << "health point is " << hp << endl;
+	cout << "health point: " << hp << endl;
 	//count down
-	
+	cout << "time left: " << (70-countdown) << "min" << endl;
 	//weapon
-	
+	if(weapon == true){
+		cout << "you do have a stick in your bag" << endl;
+	}
+	else if (weapon == false){
+		cout << "it seems that you cannot defeat the guardian" << endl;
+	}
+}
+
+//print death announce for failure in the game
+void print_death(){
+	cout << "THANK YOU FOR YOUR CONTRIBUTION TO NIGHTMARE" << endl;
+	cout << "WE WISH YOU GOOD HELL :)" << endl;
 }
 
 //the action of fighting with the guardian
@@ -44,7 +60,8 @@ int main() {
 	cout << "Infection Reason: Virtual reality is infected" << endl;
 	cout << "Current Situation: Stuck in the NIGHTMARE" << endl;
 	cout << "Analysis: Death in NIGHTMARE directly causes death in reality" << endl;
-	cout << "Suggestion: YOU need to escape before the dawn" << endl;
+	cout << "Suggestion: YOU need to escape before the dawn (in 70 MINUTES)" << endl;
+	cout << "Remember to stay away from the guardian!"
 	cout << "-------------------------------------------------------------" << endl;
 
 	//story telling and game instruction
@@ -68,47 +85,50 @@ int main() {
 		
 		bool weapon = false;
 		
-		/*
-		a bread is on the table in front of you, and the door near the table is squeezing
-		CHOOSE----------
-		A. wait and see
-		B. open the door
-		C. use table to block the door
-		*/
+		print_current_value(hp, countdown, weapon);
+		
+		//level 1
+		cout << "A bread is on the table in front of you, and the door near the table is squeezing." << endl;
+		cout << "CHOOSE----------" << endl;
+		cout << "A. wait and see" << endl;
+		cout << "B. open the door" << endl;
+		cout << "C. use table to block the door" << endl;
+		cout << "please input your choice: ";
 		
 		char a;
 		cin >> a;
 		if (a == 'A'){
-			countdown += 1;
-			// nothing happened, but wait half an hour
+			countdown += 10;
+			cout << "Nothing happened at all! But you wasted 10 minutes :(" << endl;
 		}
 		else if (a == 'B'){
-			// nothing is outside the door
+			countdown += 5;
+			cout << "Nothing is outside the door~" << endl;
 		}
 		else if (a == 'C'){
 			hp -= 1;
-			fightguardian(weapon, hp);
-			// the sound of moving the table calls the guadian, you are beaten by him and trapped by him until the dawn came.
-			/* 
-			did not wake up, you die! do you want to re-enter the nightmare?
-			CHOOSE----------
-			A. try again
-			B. exit
-			*/
-			
-			char die;
-			cin >> die;
-			if (die == 'A'){
-				continue;
+			if(fightguardian(weapon, hp) == flase){
+				cout << "The sound of moving the table invokes the guardian, and you are beaten by him and locked in the room until the dawn came." << endl;
+				cout << "YOU DIED!!!" << endl;
+				print_death_reason(hp, countdown, weapon);
+				cout << "Do you want to re-enter NIGHTMARE or just die :)" << endl;
+				cout << "CHOOSE----------" << endl;
+				cout << "A. try again" << endl;
+				cout << "B. exit" << endl;
+				char die;
+				cin >> die;
+				if (die == 'A'){
+					continue;
+				}
+				else if (die == 'B'){
+					flag = false;
+					print_death();
+					break;
+				}
 			}
-			else if (die == 'B'){
-				//sayonala
-				flag = false;
-				break;
-			}
-			
 		}
 		
+		//level 2
 		/*
 		chill and go back for the bread
 		CHOOSE----------
@@ -203,5 +223,8 @@ int main() {
 		
 		
 	}//while end
+	
+	
+	
 	
 }//main end
