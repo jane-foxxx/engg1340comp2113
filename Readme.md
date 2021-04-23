@@ -61,10 +61,12 @@ Some features implemented to fulfill the 1-5 coding requirements
 
 5. Program codes in multiple files
 
-   1. head.cpp
+   1. caesar.h
+   
+   2. caesar.cpp
 
-   2. main.cpp
+   3. main.cpp
 
-   3. waiting for implementing...
+   4. waiting for implementing...
 
 # Compilation and execution instructions:
