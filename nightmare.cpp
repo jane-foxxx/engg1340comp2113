@@ -3,8 +3,11 @@
 #include <string>
 #include <stdlib.h>
 #include <time.h>
+
 #include "caesar.h"
+
 using namespace std;
+
 
 //the action of fighting with the guardian
 //true means the player defeat the guardian and survive, and health point will decrease by 3
@@ -22,11 +25,9 @@ bool check_countdown(int countdown){
     if (countdown > 70){
         return false;
     }
-    else{
-        return true;
-    }
-
+	return true;
 }
+
 //print the death reason for each death
 void print_death_reason(int hp,int countdown, bool weapon){
 	//hp <= 0
@@ -34,11 +35,11 @@ void print_death_reason(int hp,int countdown, bool weapon){
 		cout << "You died because of no health point." << endl;
 	}
 	//player is defeated by the guardian
-	if(fightguardian(weapon, hp) == false){
+	else if(fightguardian(weapon, hp) == false){
 		cout << "You were defeated by the guardian because you do not have weapon or your health point is lower than 5" << endl;
 	}
 	//countdown > 70
-	if (countdown >70){
+	else if (countdown >70){
 		cout << "You failed to escape from NIGHTMARE BEFORE the dawn!" << endl;
 	}
 }
@@ -229,19 +230,7 @@ int main() {
 				}
 			}
 		}
-		if (check_countdown == false){
-            cout << "The Dawn is coming, you fail to escape." << endl;
-				ask_death(hp, countdown, weapon);
-				char die;
-				cin >> die;
-				if (die == 'A'){
-					continue;
-				}
-				else if (die == 'B'){
-					flag = false;
-					print_death();
-					break;
-        }
+	
 
 		print_current_value(hp, countdown, weapon);
 		//level 4
@@ -295,19 +284,7 @@ int main() {
 				cout << "You win!!! You are inevitable!" << endl;
 			}
 		}
-        if (check_countdown == false){
-            cout << "The Dawn is coming, you fail to escape." << endl;
-				ask_death(hp, countdown, weapon);
-				char die;
-				cin >> die;
-				if (die == 'A'){
-					continue;
-				}
-				else if (die == 'B'){
-					flag = false;
-					print_death();
-					break;
-        }
+       
 		print_current_value(hp, countdown, weapon);
 		//level 5
 		cout << "You go into the guardian's room and find a few things." << endl;
@@ -336,21 +313,17 @@ int main() {
 			props.push_back("compass");
 		}
 		countdown += 5;
+		int k = 0;
+		for(int i = 0; i < props.size(); i++){
+			if(props[i] == "stick"){
+				k = 1;
+			}
+		}
+		if(k == 0){
+			weapon = false;
+		}
 		
 		print_current_value(hp, countdown, weapon);
-        if (check_countdown == false){
-            cout << "The Dawn is coming, you fail to escape." << endl;
-				ask_death(hp, countdown, weapon);
-				char die;
-				cin >> die;
-				if (die == 'A'){
-					continue;
-				}
-				else if (die == 'B'){
-					flag = false;
-					print_death();
-					break;
-        }
 		//level 6
 		bool temp = false;
 		for(int i = 0; i < props.size(); i++){
@@ -393,19 +366,7 @@ int main() {
 				break;
 			}
 		}
-		if (check_countdown == false){
-            cout << "The Dawn is coming, you fail to escape." << endl;
-				ask_death(hp, countdown, weapon);
-				char die;
-				cin >> die;
-				if (die == 'A'){
-					continue;
-				}
-				else if (die == 'B'){
-					flag = false;
-					print_death();
-					break;
-        }
+		
 		print_current_value(hp, countdown, weapon);
 		//level 7
 		bool temp1 = false;
@@ -452,6 +413,22 @@ int main() {
 				break;
 			}
 		}
+		if (check_countdown(countdown) == false){
+			cout << "The Dawn is coming, you fail to escape." << endl;
+			cout << "Do you want to re-enter NIGHTMARE or just die :)" << endl;
+			cout << "CHOOSE----------" << endl;
+			cout << "A. try again" << endl;
+			cout << "B. exit" << endl;
+			char die;
+			cin >> die;
+			if (die == 'A'){
+				continue;
+			}
+			else if (die == 'B'){
+				flag = false;
+				print_death();
+				break;
+			}}
 		cout << "You eat the ham and swim across the river successfully!" << endl;
 		cout << "Welcome back to the reality!" << endl;
 		break;
@@ -463,4 +440,4 @@ int main() {
 
 	
 }//main end
-	
+
