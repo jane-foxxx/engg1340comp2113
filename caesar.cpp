@@ -15,13 +15,13 @@ int main()
     // test range , random number is between -26 and 26
     int a = -26;
     int b = 26;
-    int key2 = (rand() % (b-a+1))+ a;
+    int key2 = (rand() % (b - a + 1)) + a;
     int key = 3;
     string input = "I love YOU";
     string data = "abcdefghijklmnopqrstuvwxyz";
     string data_upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    cout<<"Key number = "<<key<<endl;
-    cout<<"initial input is "<<input<<endl;
+    cout << "Key number = "<< key << endl;
+    cout << "initial input is " << input << endl;
     
     string output = "";
     //Encrypt
@@ -34,11 +34,11 @@ int main()
             if (position != data.npos || position1 != data_upper.npos){
                 //Encrypy Uppercase letters
                 if (isupper(input[i])){
-                    output += char(int(input[i]+key-65)%26 +65);
+                    output += char(int(input[i] + key - 65) % 26 + 65);
                 }
                 // Encrypt Lowercase letters
                 else{
-                    output += char(int(input[i]+ key -97)%26 +97);
+                    output += char(int(input[i] + key -97) % 26 + 97);
                 }
             }
             else{
@@ -89,11 +89,11 @@ int main()
             if (position_d != data.npos || position1_d != data_upper.npos){
                 //Decrypy Uppercase letters
                 if (isupper(input1[i])){
-                    output1 += char(int(input1[i]-key-65)%26 +65);
+                    output1 += char(int(input1[i] - key - 65) % 26 + 65);
                 }
                 // Decrypt Lowercase letters
                 else{
-                    output1 += char(int(input1[i]- key -97)%26 +97);
+                    output1 += char(int(input1[i] - key - 97) % 26 + 97);
                 }
             }
             else{
