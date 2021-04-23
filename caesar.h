@@ -12,7 +12,6 @@ using namespace std;
 
 int caesar(){
 	cout << "Now you finally found the door with the help of the light, and you found a line engraved on the door————" << endl;
-	cout << "" << endl;
 	cout << "Only the person who addresses this cipher can open the door." << endl;
 	cout << "The is one sample left by last person who open the door successfully:" << endl;
 	cout << "Key number is -3" << endl;
