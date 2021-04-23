@@ -145,11 +145,11 @@ int main() {
 		}
 		
 		/*
-		there is another closing door and a staircase
-		CHOOSE----------
-		A. go to the thrid floor
-		B. go to the ground floor
-		C. try to open the closing door
+		cout << "there is another closing door and a staircase" << endl;
+		cout << "CHOOSE----------" << endl;
+		cout << "A. go to the thrid floor" << endl;
+		cout << "B. go to the ground floor" << endl;
+		cout << "C. try to open the closing door" << endl;
 		*/
 		
 		char c;
@@ -163,10 +163,10 @@ int main() {
 			//nothing in ground floor
 			hp -= 1;
 			/*
-			there is another closing door and a staircase
-			CHOOSE----------
-			A. go to the thrid floor
-			C. try to open the closing door
+			cout << "there is another closing door and a staircase" << endl;
+			cout << "CHOOSE----------" << endl;
+			cout << "A. go to the thrid floor" << endl;
+			cout << "C. try to open the closing door" << endl;
 			*/
 			char c1;
 			cin >> c1;
@@ -179,10 +179,10 @@ int main() {
 				fightguardian(weapon, hp);
 				// guardain
 				/* 
-				did not wake up, you die! do you want to re-enter the nightmare?
-				CHOOSE----------
-				A. try again
-				B. exit
+				cout << "did not wake up, you die! do you want to re-enter the nightmare?" << endl;
+				cout << "CHOOSE----------" << endl;
+				cout << "A. try again" << endl;
+				cout << "B. exit" << endl;
 				*/
 				
 				char die;
@@ -201,10 +201,10 @@ int main() {
 			fightguardian(weapon, hp);
 			// guardain
 			/* 
-			did not wake up, you die! do you want to re-enter the nightmare?
-			CHOOSE----------
-			A. try again
-			B. exit
+			cout << "did not wake up, you die! do you want to re-enter the nightmare?" << endl;
+			cout << "CHOOSE----------" << endl;
+			cout << "A. try again" << endl;
+			cout << "B. exit" << endl;
 			*/
 			
 			char die;
