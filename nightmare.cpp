@@ -1,12 +1,9 @@
-
 #include <vector>
 #include <iostream>
 #include <string>
 #include <stdlib.h>
 #include <time.h>
-
 #include "caesar.h"
-
 using namespace std;
 
 //the action of fighting with the guardian
@@ -19,6 +16,7 @@ bool fightguardian(bool weapon, int &hp){
 	hp = 0;
 	return false;
 }
+
 //Time triger
 bool check_countdown(int countdown){
     if (countdown > 70){
@@ -27,8 +25,8 @@ bool check_countdown(int countdown){
     else{
         return true;
     }
-}
 
+}
 //print the death reason for each death
 void print_death_reason(int hp,int countdown, bool weapon){
 	//hp <= 0
@@ -231,7 +229,20 @@ int main() {
 				}
 			}
 		}
-		
+		if (check_countdown == false){
+            cout << "The Dawn is coming, you fail to escape." << endl;
+				ask_death(hp, countdown, weapon);
+				char die;
+				cin >> die;
+				if (die == 'A'){
+					continue;
+				}
+				else if (die == 'B'){
+					flag = false;
+					print_death();
+					break;
+        }
+
 		print_current_value(hp, countdown, weapon);
 		//level 4
 		cout << "Do you want to challenge the guardian or back to the ground floor?" << endl;
@@ -284,7 +295,19 @@ int main() {
 				cout << "You win!!! You are inevitable!" << endl;
 			}
 		}
-		
+        if (check_countdown == false){
+            cout << "The Dawn is coming, you fail to escape." << endl;
+				ask_death(hp, countdown, weapon);
+				char die;
+				cin >> die;
+				if (die == 'A'){
+					continue;
+				}
+				else if (die == 'B'){
+					flag = false;
+					print_death();
+					break;
+        }
 		print_current_value(hp, countdown, weapon);
 		//level 5
 		cout << "You go into the guardian's room and find a few things." << endl;
@@ -315,6 +338,19 @@ int main() {
 		countdown += 5;
 		
 		print_current_value(hp, countdown, weapon);
+        if (check_countdown == false){
+            cout << "The Dawn is coming, you fail to escape." << endl;
+				ask_death(hp, countdown, weapon);
+				char die;
+				cin >> die;
+				if (die == 'A'){
+					continue;
+				}
+				else if (die == 'B'){
+					flag = false;
+					print_death();
+					break;
+        }
 		//level 6
 		bool temp = false;
 		for(int i = 0; i < props.size(); i++){
@@ -357,7 +393,19 @@ int main() {
 				break;
 			}
 		}
-		
+		if (check_countdown == false){
+            cout << "The Dawn is coming, you fail to escape." << endl;
+				ask_death(hp, countdown, weapon);
+				char die;
+				cin >> die;
+				if (die == 'A'){
+					continue;
+				}
+				else if (die == 'B'){
+					flag = false;
+					print_death();
+					break;
+        }
 		print_current_value(hp, countdown, weapon);
 		//level 7
 		bool temp1 = false;
