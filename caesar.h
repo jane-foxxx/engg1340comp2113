@@ -1,12 +1,12 @@
 // caesar.cpp
+#ifndef
+#define
 
 #include <vector>
 #include <iostream>
 #include <string>
 #include <stdlib.h>
 #include <time.h>
-
-#include "caesar.h"
 
 using namespace std;
 
@@ -164,3 +164,5 @@ int caesar(){
 		times += 1;
 	}
 }
+
+#endif
