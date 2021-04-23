@@ -1,6 +1,6 @@
 // caesar.h
-#ifndef
-#define
+#ifndef CAESAR_H
+#define CAESAR_H
 
 #include <vector>
 #include <iostream>
@@ -23,10 +23,10 @@ int caesar(){
 	cout << "Now please use your wise to solve this cipher question!" << endl;
 	// set random key number 
 	srand((unsigned)time(NULL)); 
-    int a = -100;
-    int b = 100;
+	int a = -100;
+	int b = 100;
 	int key = (rand() % (b-a+1))+ a;
-
+	
 	string input = "ENGG1340!";
 	string data = "abcdefghijklmnopqrstuvwxyz";
 	string data_upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -85,7 +85,7 @@ int caesar(){
 		}
 	}
 	cout << "Encrypted sentence is " << output << endl;
-    cout << "Please input your decrypted password: ";
+	cout << "Please input your decrypted password: ";
 	
 	//Decrypt
 	string input1 = output;
