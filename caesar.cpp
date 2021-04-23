@@ -15,9 +15,8 @@ int game(){
 	srand((unsigned)time(NULL)); 
 
 	// test range , random number is between -26 and 26
-	int a = -26;
-	int b = 26;
-	int key = (rand() % (b - a + 1)) + a;
+
+	int key = rand();
 
 	string input = "ENGG1340!";
 	string data = "abcdefghijklmnopqrstuvwxyz";
