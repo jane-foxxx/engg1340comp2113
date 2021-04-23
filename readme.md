@@ -58,15 +58,22 @@ Some features implemented to fulfill the 1-5 coding requirements
    1. input.txt contains the random input factors
 
    2. output.txt contains the results of the random input factors.
+   
+   3. The game is based on the response from the player.
 
 5. Program codes in multiple files
 
    1. caesar.h
    
-   2. caesar.cpp
+   2. nightmare.cpp
 
-   3. main.cpp
+   3. Makefile
 
    4. waiting for implementing...
 
 # Compilation and execution instructions:
+
+$make game
+./game
+
+with the two sentence, the code can be executed and you can play the game!
