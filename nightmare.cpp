@@ -19,6 +19,15 @@ bool fightguardian(bool weapon, int &hp){
 	hp = 0;
 	return false;
 }
+//Time triger
+bool check_countdown(int countdown){
+    if (countdown > 70){
+        return false;
+    }
+    else{
+        return true;
+    }
+}
 
 //print the death reason for each death
 void print_death_reason(int hp,int countdown, bool weapon){
