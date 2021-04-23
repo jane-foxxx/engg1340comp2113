@@ -66,7 +66,7 @@ void print_death(){
 }
 
 //the encryption game!!!
-int game(){
+int caesar(){
 	cout << "Now you finally found the door with the help of the light, and you found a line engraved on the door————" << endl;
 	cout << "" << endl;
 	cout << "Only the person who addresses this cipher can open the door." << endl;
@@ -485,7 +485,7 @@ int main() {
 		}
 		cout << "You take the lamp and go to the ground floor." << endl;
 		cout << "There is a door, but only go through the game successfully can open the door." << endl;
-		int cc = game();
+		int cc = caesar();
 		if (cc <= 3){
 			countdown += cc * 5;
 		}
@@ -551,7 +551,7 @@ int main() {
 			}
 		}
 		cout << "You eat the ham and swim across the river successfully!" << endl;
-		cout << "Thank YOU!" << endl;
+		cout << "Welcome back to the reality!" << endl;
 		break;
 			
 			
