@@ -7,81 +7,14 @@
 #define DIAMOND "\xE2\x99\xA6"
 
 #include "caesar.h"
+#include "fightguardian.h"
+#include "print_death_reason.h"
+#include "check_countdown.h"
+#include "print_current_value.h"
+#include "ask_death.h"
+#include "print_death.h"
 
 using namespace std;
-
-//the action of fighting with the guardian
-//true means the player defeat the guardian and survive, and health point will decrease by 3
-//false means the player is defeated and die
-bool fightguardian(bool weapon, int &hp){
-	if(hp > 5 && weapon == true){
-	    hp -= 3;
-		return true;
-	}
-	return false;
-}
-
-//Time triger
-bool check_countdown(int countdown){
-    if (countdown > 70){
-        return false;
-    }
-	return true;
-}
-
-//print the death reason for each death
-void print_death_reason(int hp,int countdown, bool weapon){
-	//hp <= 0
-	if(hp <= 0){
-		cout << "You die because of no health point." << endl;
-	}
-	//player is defeated by the guardian
-	else if(fightguardian(weapon, hp) == false){
-		cout << "You are defeated by the guardian because you do not have weapon or your health point is lower than 6" << endl;
-	}
-	//countdown > 70
-	else if (countdown > 70){
-		cout << "You fail to escape from NIGHTMARE BEFORE the dawn!" << endl;
-	}
-}
-
-//print the current states of the player so that the player can make more choice
-void print_current_value(int hp,int countdown, bool weapon){
-    cout << endl;
-    cout << "-------Current Condition-------" << endl;
-	//hp
-	cout << "|       health point: " << hp <<"       |" << endl;
-	//count down
-	cout << "|       time left: " << (70-countdown) << " min     |" << endl;
-	//weapon
-	if(weapon == true){
-		cout << "|       weapon: stick         |" << endl;
-	}
-	else if (weapon == false){
-		cout << "|       weapon: none          |" << endl;
-	}
-	cout << "-------------------------------" << endl;
-}
-
-//ask the player if play again
-void ask_death(int hp, int countdown, bool weapon){
-	print_death_reason(hp, countdown, weapon);
-	cout << endl;
-	cout << "        ******************************        " << endl;
-	cout << "              **** YOU DIED! ****             " << endl;
-	cout << ">>> Do you want to re-enter NIGHTMARE or just die ?  :)" << endl;
-	cout << ">>> YOU CHOOSE TO----------" << endl;
-	cout << "   A. Try again" << endl;
-	cout << "   B. Exit" << endl;
-	cout << ">>> Please input your choice: ";
-}
-
-//print death announce for failure in the game
-void print_death(){
-	cout << "THANK YOU FOR YOUR CONTRIBUTION TO NIGHTMARE" << endl;
-	cout << "WE WISH YOU GOOD HELL :)" << endl;
-}
-
 
 int main() {
 	
@@ -460,16 +393,8 @@ int main() {
 			}}
 		cout << "--- You eat the ham and swim across the river successfully!" << endl;
 		cout << "   " << HEART << " Welcome back to the reality! " << HEART << endl;
-		break;
-			
-			
+		break;	
 			
 	}//while end
 	
-
-	
 }//main end
-
-
-
-
