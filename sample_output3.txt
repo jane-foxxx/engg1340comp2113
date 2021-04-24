@@ -1,18 +1,20 @@
-      ***************INTERSTELLAR LOG UPDATE***************
---------------------------------------------------------------------------
-|                        Time: A.D. 2049                                 |
-|	Infection Reason: Virtual reality is infected                    |
-|	Current Situation: Stuck in the NIGHTMARE                        |
-|	Analysis: Death in NIGHTMARE directly causes death in reality    |
-|	Suggestion: YOU need to escape before the dawn (in 70 MINUTES)   |
-|	Remember to stay away from the guardian!                         |
---------------------------------------------------------------------------
+            ***********************INTERSTELLAR LOG UPDATE***********************     
+----------------------------------------------------------------------------------------------------
+|                                Time: A.D. 2049                                                   |
+|  As You are playing the game named VIRTUAL REALITY,  you are attacked by the unknow virus.       |
+|  When you react, you find yourself trapped in a Nightmare Space.                                 |
+|  At this moment, the system prompts the sound----------                                          |
+|  --- Welcome to the NIGHTMARE GAME!                                                              |
+|  --- You should leave the tower and across the river to the east before the dawn (in 70 MINUTES) |
+|  --- Try to survive and escape this nightmare within the set time!                               |
+|  --- Otherwise you will lose your life in NIGHTMARE which directly causes death in the reality.  |
+|  Tip: Beware of the guardian!                                                                    |
+----------------------------------------------------------------------------------------------------
 
-      ***************Current Situation Update***************
+                 ***************Current Situation Update***************
 -------------------------------------------------------------------------------------------------
-|                      Time: A.D. 2049                                                          |
-| The sight suddenly goes white.                                                                |
-| Current Situation: Stuck in the NIGHTMARE                                                     |
+|                                Time: A.D. 2049                                                |
+| Your sight suddenly goes white.                                                               |
 | After few seconds, you can see and find that you are in a room with some moonlight leaning in.|
 -------------------------------------------------------------------------------------------------
 
@@ -120,19 +122,15 @@ You are defeated by the guardian because you do not have weapon or your health p
 |  --> Keeping fight to win!2021  |
 -----------------------------------
 >>> Now please use your wise to solve this cipher question!
->>> Key number = 29
->>> Encrypted sentence is HQJJ1340!
+>>> Key number = 71
+>>> Encrypted sentence is XGZZ1340!
 --> Please input your decrypted password: OMG! Not the correct answer~
 There are 2 more chances.
 Try again: OMG! Not the correct answer~
 There are 1 more chances.
 Try again: Three times all wrong
-You are defeated by the guardian because you do not have weapon or your health point is lower than 6
-
-        ******************************        
-              **** YOU DIED! ****             
->>> Do you want to re-enter NIGHTMARE or just die ?  :)
->>> YOU CHOOSE TO----------
+>>> Do you want to re-enter NIGHTMARE or just die :)
+>>> YOU CHOOSE TO---------
    A. Try again
    B. Exit
 >>> Please input your choice: THANK YOU FOR YOUR CONTRIBUTION TO NIGHTMARE
