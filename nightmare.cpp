@@ -6,7 +6,7 @@
 #define HEART   "\xE2\x99\xA5"
 #define DIAMOND "\xE2\x99\xA6"
 
-//#include "caesar.h"
+#include "caesar.h"
 
 using namespace std;
 
