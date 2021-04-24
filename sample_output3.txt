@@ -105,7 +105,7 @@ You are defeated by the guardian because you do not have weapon or your health p
 -------Current Condition-------
 |       health point: 3       |
 |       time left: 45 min     |
-|       weapon: none          |
+|       weapon: stick         |
 -------------------------------
 --- You take the lamp and go to the ground floor.
 --- There is a door, but it requires one correct password to open it.
@@ -122,8 +122,8 @@ You are defeated by the guardian because you do not have weapon or your health p
 |  --> Keeping fight to win!2021  |
 -----------------------------------
 >>> Now please use your wise to solve this cipher question!
->>> Key number = 71
->>> Encrypted sentence is XGZZ1340!
+>>> Key number = 40
+>>> Encrypted sentence is SBUU1340!
 --> Please input your decrypted password: OMG! Not the correct answer~
 There are 2 more chances.
 Try again: OMG! Not the correct answer~
