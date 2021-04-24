@@ -13,7 +13,7 @@
 using namespace std;
 
 int caesar(){
-    cout << DIAMOND << " ************************************************************************************************************* " << DIAMOND << endl;
+	cout << DIAMOND << " ************************************************************************************************************* " << DIAMOND << endl;
 	cout << "  *  Now you finally found the door with the help of the light, and you found a line engraved on the door———— *" << endl;
 	cout << "  *  Only the person who addresses this cipher can open the door.                                             *" << endl;
 	cout << "  *  The is one sample left by last person who opened the door successfully:                                  *" << endl;
@@ -31,12 +31,12 @@ int caesar(){
 	int a = -100;
 	int b = 100;
 	int key = (rand() % (b-a+1))+ a;
-	
+
 	string input = "ENGG1340!";
 	string data = "abcdefghijklmnopqrstuvwxyz";
 	string data_upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	cout << ">>> Key number = "<< key << endl;
-	
+
 	string output = "";
 	//Encrypt
 	string::size_type position;
@@ -91,7 +91,7 @@ int caesar(){
 	}
 	cout << ">>> Encrypted sentence is " << output << endl;
 	cout << "--> Please input your decrypted password: ";
-	
+
 	//Decrypt
 	string input1 = output;
 	string output1;
