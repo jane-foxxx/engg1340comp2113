@@ -23,7 +23,7 @@
 |       weapon: none          |
 -------------------------------
 >>> One bread is on the table in front of you, and the door near the table is squeezing.
->>> CHOOSE----------
+>>> YOU CHOOSE TO-----------------
    A. Wait and see
    B. Open the door
    C. Use table to block the door
@@ -95,13 +95,13 @@
 --------------SAMPLE---------------
 |  >>> Key number is -3           |
 |  >>> Encrypted sentence:        |
-|  --> Hbbm cfdeqfkd ql tfk!      |
+|  --> Hbbm cfdeqfkd ql tfk!2021  |
 |  >>> Decrypted password:        |
-|  --> Keeping fight to win!      |
+|  --> Keeping fight to win!2021  |
 -----------------------------------
 >>> Now please use your wise to solve this cipher question!
->>> Key number = -69
->>> Encrypted sentence is NWPP1340!
+>>> Key number = 95
+>>> Encrypted sentence is VEXX1340!
 --> Please input your decrypted password: Congratulation! You pass it!
 
 -------Current Condition-------
