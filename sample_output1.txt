@@ -1,18 +1,20 @@
-      ***************INTERSTELLAR LOG UPDATE***************
---------------------------------------------------------------------------
-|                        Time: A.D. 2049                                 |
-|	Infection Reason: Virtual reality is infected                    |
-|	Current Situation: Stuck in the NIGHTMARE                        |
-|	Analysis: Death in NIGHTMARE directly causes death in reality    |
-|	Suggestion: YOU need to escape before the dawn (in 70 MINUTES)   |
-|	Remember to stay away from the guardian!                         |
---------------------------------------------------------------------------
+            ***********************INTERSTELLAR LOG UPDATE***********************     
+----------------------------------------------------------------------------------------------------
+|                                Time: A.D. 2049                                                   |
+|  As You are playing the game named VIRTUAL REALITY,  you are attacked by the unknow virus.       |
+|  When you react, you find yourself trapped in a Nightmare Space.                                 |
+|  At this moment, the system prompts the sound----------                                          |
+|  --- Welcome to the NIGHTMARE GAME!                                                              |
+|  --- You should leave the tower and across the river to the east before the dawn (in 70 MINUTES) |
+|  --- Try to survive and escape this nightmare within the set time!                               |
+|  --- Otherwise you will lose your life in NIGHTMARE which directly causes death in the reality.  |
+|  Tip: Beware of the guardian!                                                                    |
+----------------------------------------------------------------------------------------------------
 
-      ***************Current Situation Update***************
+                 ***************Current Situation Update***************
 -------------------------------------------------------------------------------------------------
-|                      Time: A.D. 2049                                                          |
-| The sight suddenly goes white.                                                                |
-| Current Situation: Stuck in the NIGHTMARE                                                     |
+|                                Time: A.D. 2049                                                |
+| Your sight suddenly goes white.                                                               |
 | After few seconds, you can see and find that you are in a room with some moonlight leaning in.|
 -------------------------------------------------------------------------------------------------
 
@@ -100,8 +102,8 @@
 |  --> Keeping fight to win!2021  |
 -----------------------------------
 >>> Now please use your wise to solve this cipher question!
->>> Key number = 95
->>> Encrypted sentence is VEXX1340!
+>>> Key number = 76
+>>> Encrypted sentence is CLEE1340!
 --> Please input your decrypted password: Congratulation! You pass it!
 
 -------Current Condition-------
@@ -109,6 +111,6 @@
 |       time left: 40 min     |
 |       weapon: none          |
 -------------------------------
---- With the compass, you find the way out and stop in front of a river.
+--- With the compass, you find the way out and finally stop in front of a river.
 --- You eat the ham and swim across the river successfully!
    ♥ Welcome back to the reality! ♥
