@@ -22,7 +22,7 @@ int main() {
 	cout << "            ***********************INTERSTELLAR LOG UPDATE***********************     " << endl;
 	cout << "----------------------------------------------------------------------------------------------------" << endl;
 	cout << "|                                Time: A.D. 2049                                                   |" << endl;
-	cout << "|  As You are playing the game named VIRTUAL REALITY,  you are attacked by the unknow virus.       |" << endl;
+	cout << "|  As You are playing the game named VIRTUAL REALITY,  you are attacked by the unknown virus.      |" << endl;
 	cout << "|  When you react, you find yourself trapped in a Nightmare Space.                                 |" << endl;
     	cout << "|  At this moment, the system prompts the sound----------                                          |" << endl;
     	cout << "|  --- Welcome to the NIGHTMARE GAME!                                                              |" << endl;
