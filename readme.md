@@ -10,7 +10,7 @@ In the Great Interstellar Era, players in a virtual reality game world were atta
 # Game Rule:
 When the nightmare game starts, there are forty minutes before dawn coming. Each choice made by the player in the nightmare game will spend several minutes. 
 
-The initial physical energy value of each player is 5 units. If the physical energy value is lower than 5, the player cannot win the battle with the guard. 
+The initial physical energy value of each player is 5 units. If the physical energy value is lower than 6, the player will be defeated by the guardian and lose the game. 
 
 During the game, the player will get useful props in the room, thus deciding how to use the props will be one of the critical factors in successfully escaping the game.
 
