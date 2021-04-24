@@ -19,9 +19,9 @@ int caesar(){
 	cout << "--------------SAMPLE---------------" << endl;
 	cout << "|  >>> Key number is -3           |" << endl;
 	cout << "|  >>> Encrypted sentence:        |" << endl;
-	cout << "|  --> Hbbm cfdeqfkd ql tfk!      |" << endl;
+	cout << "|  --> Hbbm cfdeqfkd ql tfk!2021  |" << endl;
 	cout << "|  >>> Decrypted password:        |" << endl;
-	cout << "|  --> Keeping fight to win!      |" << endl;
+	cout << "|  --> Keeping fight to win!2021  |" << endl;
 	cout << "-----------------------------------" << endl;
 	cout << ">>> Now please use your wise to solve this cipher question!" << endl;
 	// set random key number 
@@ -246,23 +246,25 @@ void print_death(){
 int main() {
 	
 	//background explanation
-	cout << "      ***************INTERSTELLAR LOG UPDATE***************" << endl;
-	cout << "--------------------------------------------------------------------------" << endl;
-	cout << "|                        Time: A.D. 2049                                 |" << endl;
-	cout << "|	Infection Reason: Virtual reality is infected                    |" << endl;
-	cout << "|	Current Situation: Stuck in the NIGHTMARE                        |" << endl;
-	cout << "|	Analysis: Death in NIGHTMARE directly causes death in reality    |" << endl;
-	cout << "|	Suggestion: YOU need to escape before the dawn (in 70 MINUTES)   |" << endl;
-	cout << "|	Remember to stay away from the guardian!                         |" << endl;
-	cout << "--------------------------------------------------------------------------" << endl;
+	cout << "            ***********************INTERSTELLAR LOG UPDATE***********************     " << endl;
+	cout << "----------------------------------------------------------------------------------------------------" << endl;
+	cout << "|                                Time: A.D. 2049                                                   |" << endl;
+	cout << "|  As You are playing the game named VIRTUAL REALITY,  you are attacked by the unknow virus.       |" << endl;
+	cout << "|  When you react, you find yourself trapped in a Nightmare Space.                                 |" << endl;
+    cout << "|  At this moment, the system prompts the sound----------                                          |" << endl;
+    cout << "|  --- Welcome to the NIGHTMARE GAME!                                                              |" << endl;
+    cout << "|  --- You should leave the tower and across the river to the east before the dawn (in 70 MINUTES) |" << endl;
+	cout << "|  --- Try to survive and escape this nightmare within the set time!                               |" << endl;
+	cout << "|  --- Otherwise you will lose your life in NIGHTMARE which directly causes death in the reality.  |" << endl;
+	cout << "|  Tip: Beware of the guardian!                                                                    |" << endl;
+	cout << "----------------------------------------------------------------------------------------------------" << endl;
 	cout << endl;
 	
 	//story telling and game instruction
-	cout << "      ***************Current Situation Update***************" << endl;
+	cout << "                 ***************Current Situation Update***************" << endl;
 	cout << "-------------------------------------------------------------------------------------------------" << endl;
-	cout << "|                      Time: A.D. 2049                                                          |" << endl;
-	cout << "| The sight suddenly goes white.                                                                |" << endl;
-	cout << "| Current Situation: Stuck in the NIGHTMARE                                                     |" << endl;
+	cout << "|                                Time: A.D. 2049                                                |" << endl;
+	cout << "| Your sight suddenly goes white.                                                               |" << endl;
 	cout << "| After few seconds, you can see and find that you are in a room with some moonlight leaning in.|" << endl;
 	cout << "-------------------------------------------------------------------------------------------------" << endl;
 	cout << endl;
@@ -284,7 +286,7 @@ int main() {
 		print_current_value(hp, countdown, weapon);
 		//level 1
 		cout << ">>> One bread is on the table in front of you, and the door near the table is squeezing." << endl;
-		cout << ">>> CHOOSE----------" << endl;
+		cout << ">>> YOU CHOOSE TO-----------------" << endl;
 		cout << "   A. Wait and see" << endl;
 		cout << "   B. Open the door" << endl;
 		cout << "   C. Use table to block the door" << endl;
@@ -537,8 +539,12 @@ int main() {
 			countdown += cc * 5;
 		}
 		else {
+			cout << ">>> Do you want to re-enter NIGHTMARE or just die :)" << endl;
+        	cout << ">>> YOU CHOOSE TO---------" << endl;
+        	cout << "   A. Try again" << endl;
+        	cout << "   B. Exit" << endl;
+        	cout << ">>> Please input your choice: ";
 			countdown += 100;
-			ask_death(hp, countdown, weapon);
 			char die;
 			cin >> die;
 			if (die == 'A'){
@@ -578,7 +584,7 @@ int main() {
 				break;
 			}
 		}
-		cout << "--- With the compass, you find the way out and stop in front of a river." << endl;
+		cout << "--- With the compass, you find the way out and finally stop in front of a river." << endl;
 		bool temp2 = false;
 		for(int i = 0; i < props.size(); i++){
 			if (props[i] == "ham"){
@@ -587,10 +593,14 @@ int main() {
 			}
 		}
 		if(temp2 == false){
-			cout << ">>> You drown when you are swimming across the river!" << endl;
+			cout << ">>> What a pity! You drown when you are swimming across the river!" << endl;
 			cout << ">>> Tip: hp must be higher than 3 to cross the river." << endl;
-			ask_death(hp, countdown, weapon);
-			char die;
+			cout << ">>> Do you want to re-enter NIGHTMARE or just die :)" << endl;
+        	cout << ">>> YOU CHOOSE TO---------" << endl;
+        	cout << "   A. Try again" << endl;
+        	cout << "   B. Exit" << endl;
+        	cout << ">>> Please input your choice: ";
+        	char die;
 			cin >> die;
 			if (die == 'A'){
 				continue;
@@ -629,4 +639,7 @@ int main() {
 
 	
 }//main end
+
+
+
 
