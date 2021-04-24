@@ -1,67 +1,85 @@
-INTERSTELLAR LOG UPDATE:
--------------------------------------------------------------
-Time: A.D. 2049
-Infection Reason: Virtual reality is infected
-Current Situation: Stuck in the NIGHTMARE
-Analysis: Death in NIGHTMARE directly causes death in reality
-Suggestion: YOU need to escape before the dawn (in 70 MINUTES)
-Remember to stay away from the guardian!
--------------------------------------------------------------
-Current Situation Update: 
-The sight suddenly goes white.
-After few seconds, you can see and find that you are in a room with some moonlight leaning in.
-health point: 5
-time left: 70 min
-weapon: none
-A bread is on the table in front of you, and the door near the table is squeezing.
-CHOOSE----------
-A. wait and see
-B. open the door
-C. use table to block the door
-please input your choice: C
-The sound of moving the table invokes the guardian, and you are beaten by him and locked in the room until the dawn came.
-YOU DIED!!!
-You died because of no health point.
-Do you want to re-enter NIGHTMARE or just die :)
-CHOOSE----------
-A. try again
-B. exit
-A
-health point: 5
-time left: 70 min
-weapon: none
-A bread is on the table in front of you, and the door near the table is squeezing.
-CHOOSE----------
-A. wait and see
-B. open the door
-C. use table to block the door
-please input your choice: A
-Nothing happened at all! But you wasted 10 minutes :(
-health point: 5
-time left: 60 min
-weapon: none
-So you calm down and back to the table.
-CHOOSE----------
-A. eat the bread and leave the room
-B. just leave the room
-please input your choice: B
-Why don't you eat the bread?
-health point: 5
-time left: 55 min
-weapon: none
-There is another closing door and staircases.
-CHOOSE----------
-A. go to the third floor
-B. go to the ground floor
-C. try to open the closing door
-please input your choice: C
-You open the door and the guardian is inside if it. And you are defeated by the guardian.
-YOU DIED!!!
-You died because of no health point.
-Do you want to re-enter NIGHTMARE or just die :)
-CHOOSE----------
-A. try again
-B. exit
-B
-THANK YOU FOR YOUR CONTRIBUTION TO NIGHTMARE
+      ***************INTERSTELLAR LOG UPDATE***************
+--------------------------------------------------------------------------
+|                        Time: A.D. 2049                                 |
+|	Infection Reason: Virtual reality is infected                    |
+|	Current Situation: Stuck in the NIGHTMARE                        |
+|	Analysis: Death in NIGHTMARE directly causes death in reality    |
+|	Suggestion: YOU need to escape before the dawn (in 70 MINUTES)   |
+|	Remember to stay away from the guardian!                         |
+--------------------------------------------------------------------------
+
+      ***************Current Situation Update***************
+-------------------------------------------------------------------------------------------------
+|                      Time: A.D. 2049                                                          |
+| The sight suddenly goes white.                                                                |
+| Current Situation: Stuck in the NIGHTMARE                                                     |
+| After few seconds, you can see and find that you are in a room with some moonlight leaning in.|
+-------------------------------------------------------------------------------------------------
+
+
+-------Current Condition-------
+|       health point: 5       |
+|       time left: 70 min     |
+|       weapon: none          |
+-------------------------------
+>>> One bread is on the table in front of you, and the door near the table is squeezing.
+>>> CHOOSE----------
+   A. Wait and see
+   B. Open the door
+   C. Use table to block the door
+>>> Please input your choice: --- The sound of moving the table invokes the guardian, and you are beaten by him and locked in the room until the dawn came.
+You are defeated by the guardian because you do not have weapon or your health point is lower than 6
+
+        ******************************        
+              **** YOU DIED! ****             
+>>> Do you want to re-enter NIGHTMARE or just die ?  :)
+>>> YOU CHOOSE TO----------
+   A. Try again
+   B. Exit
+>>> Please input your choice: 
+-------Current Condition-------
+|       health point: 5       |
+|       time left: 70 min     |
+|       weapon: none          |
+-------------------------------
+>>> One bread is on the table in front of you, and the door near the table is squeezing.
+>>> CHOOSE----------
+   A. Wait and see
+   B. Open the door
+   C. Use table to block the door
+>>> Please input your choice: --- Nothing happened at all! But you wasted 10 minutes :(
+
+-------Current Condition-------
+|       health point: 5       |
+|       time left: 60 min     |
+|       weapon: none          |
+-------------------------------
+>>> So you calm down and back to the table.
+>>> NOW YOU CHOOSE TO------------------
+  A. Eat the bread and leave the room
+  B. Just leave the room
+>>> Please input your choice: --- Why don't you eat the bread?
+
+-------Current Condition-------
+|       health point: 5       |
+|       time left: 55 min     |
+|       weapon: none          |
+-------------------------------
+>>> There is another closing door and staircases.
+>>> You find that this room seems to have three floors.
+>>> SO YOU CHOOSE----------
+  A. Go to the third floor
+  B. Go to the ground floor
+  C. Try to open the closing door
+>>> Please input your choice: --- You open the door, but the guardian is inside the room!
+--- Unfortunately, you are defeated by the guardian...
+You are defeated by the guardian because you do not have weapon or your health point is lower than 6
+
+        ******************************        
+              **** YOU DIED! ****             
+>>> Do you want to re-enter NIGHTMARE or just die ?  :)
+>>> YOU CHOOSE TO----------
+   A. Try again
+   B. Exit
+>>> Please input your choice: THANK YOU FOR YOUR CONTRIBUTION TO NIGHTMARE
 WE WISH YOU GOOD HELL :)
