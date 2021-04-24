@@ -115,7 +115,7 @@ int main() {
 		print_current_value(hp, countdown, weapon);
 		//level 3
 		cout << ">>> There is another closing door and staircases." << endl;
-		cout << ">>> You find that this room seems to have three floors." << endl;
+		cout << ">>> You find that this tower seems to have three floors." << endl;
 		cout << ">>> SO YOU CHOOSE----------" << endl;
 		cout << "  A. Go to the third floor" << endl;
 		cout << "  B. Go to the ground floor" << endl;
