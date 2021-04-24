@@ -7,20 +7,25 @@
 #include <string>
 #include <stdlib.h>
 #include <time.h>
+#define HEART   "\xE2\x99\xA5"
+#define DIAMOND "\xE2\x99\xA6"
 
 using namespace std;
 
 int caesar(){
-	cout << "Now you finally found the door with the help of the light, and you found a line engraved on the door————" << endl;
-	cout << "" << endl;
-	cout << "Only the person who addresses this cipher can open the door." << endl;
-	cout << "The is one sample left by last person who open the door successfully:" << endl;
-	cout << "Key number is -3" << endl;
-	cout << "Encrypted sentence:" << endl;
-	cout << "Hbbm cfdeqfkd ql tfk!" << endl;
-	cout << "Decrypted password:" << endl;
-	cout << "Keeping fight to win!" << endl;
-	cout << "Now please use your wise to solve this cipher question!" << endl;
+    cout << DIAMOND << " ************************************************************************************************************* " << DIAMOND << endl;
+	cout << "  *  Now you finally found the door with the help of the light, and you found a line engraved on the door———— *" << endl;
+	cout << "  *  Only the person who addresses this cipher can open the door.                                             *" << endl;
+	cout << "  *  The is one sample left by last person who opened the door successfully:                                  *" << endl;
+	cout << DIAMOND << " ************************************************************************************************************* " << DIAMOND << endl;
+	cout << "-----------------------------------" << endl;
+	cout << "|  >>> Key number is -3           |" << endl;
+	cout << "|  >>> Encrypted sentence:        |" << endl;
+	cout << "|  --> Hbbm cfdeqfkd ql tfk!      |" << endl;
+	cout << "|  >>> Decrypted password:        |" << endl;
+	cout << "|  --> Keeping fight to win!      |" << endl;
+	cout << "-----------------------------------" << endl;
+	cout << ">>> Now please use your wise to solve this cipher question!" << endl;
 	// set random key number 
 	srand((unsigned)time(NULL)); 
 	int a = -100;
@@ -30,7 +35,7 @@ int caesar(){
 	string input = "ENGG1340!";
 	string data = "abcdefghijklmnopqrstuvwxyz";
 	string data_upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	cout << "Key number = "<< key << endl;
+	cout << ">>> Key number = "<< key << endl;
 	
 	string output = "";
 	//Encrypt
@@ -84,8 +89,8 @@ int caesar(){
 			}
 		}
 	}
-	cout << "Encrypted sentence is " << output << endl;
-	cout << "Please input your decrypted password: ";
+	cout << ">>> Encrypted sentence is " << output << endl;
+	cout << "--> Please input your decrypted password: ";
 	
 	//Decrypt
 	string input1 = output;
@@ -159,12 +164,11 @@ int caesar(){
 				return 3;
 				break;
 			}
-			cout << "3 times all wrong" << endl;
+			cout << "Three times all wrong" << endl;
 			return 4;
 			break;
 		}
 		times += 1;
 	}
 }
-
 #endif
