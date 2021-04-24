@@ -23,7 +23,7 @@
 |       weapon: none          |
 -------------------------------
 >>> One bread is on the table in front of you, and the door near the table is squeezing.
->>> CHOOSE----------
+>>> YOU CHOOSE TO-----------------
    A. Wait and see
    B. Open the door
    C. Use table to block the door
@@ -43,7 +43,7 @@ You are defeated by the guardian because you do not have weapon or your health p
 |       weapon: none          |
 -------------------------------
 >>> One bread is on the table in front of you, and the door near the table is squeezing.
->>> CHOOSE----------
+>>> YOU CHOOSE TO-----------------
    A. Wait and see
    B. Open the door
    C. Use table to block the door
