@@ -21,9 +21,9 @@ int caesar(){
 	cout << "--------------SAMPLE---------------" << endl;
 	cout << "|  >>> Key number is -3           |" << endl;
 	cout << "|  >>> Encrypted sentence:        |" << endl;
-	cout << "|  --> Hbbm cfdeqfkd ql tfk!      |" << endl;
+	cout << "|  --> Hbbm cfdeqfkd ql tfk!2021  |" << endl;
 	cout << "|  >>> Decrypted password:        |" << endl;
-	cout << "|  --> Keeping fight to win!      |" << endl;
+	cout << "|  --> Keeping fight to win!2021  |" << endl;
 	cout << "-----------------------------------" << endl;
 	cout << ">>> Now please use your wise to solve this cipher question!" << endl;
 	// set random key number 
@@ -171,4 +171,5 @@ int caesar(){
 		times += 1;
 	}
 }
+
 #endif
