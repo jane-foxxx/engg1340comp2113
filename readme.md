@@ -74,6 +74,7 @@ Some features implemented to fulfill the 1-5 coding requirements
 # Compilation and execution instructions:
 
 $make game
+
 ./game
 
 with the two sentence, the code can be executed and you can play the game!
