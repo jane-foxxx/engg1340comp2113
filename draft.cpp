@@ -16,7 +16,7 @@ int caesar(){
 	cout << "  *  Only the person who addresses this cipher can open the door.                                             *" << endl;
 	cout << "  *  The is one sample left by last person who opened the door successfully:                                  *" << endl;
 	cout << DIAMOND << " ************************************************************************************************************* " << DIAMOND << endl;
-	cout << "-----------------------------------" << endl;
+	cout << "--------------SAMPLE---------------" << endl;
 	cout << "|  >>> Key number is -3           |" << endl;
 	cout << "|  >>> Encrypted sentence:        |" << endl;
 	cout << "|  --> Hbbm cfdeqfkd ql tfk!      |" << endl;
