@@ -92,7 +92,7 @@
   *  Only the person who addresses this cipher can open the door.                                             *
   *  The is one sample left by last person who opened the door successfully:                                  *
 ♦ ************************************************************************************************************* ♦
------------------------------------
+--------------SAMPLE---------------
 |  >>> Key number is -3           |
 |  >>> Encrypted sentence:        |
 |  --> Hbbm cfdeqfkd ql tfk!      |
@@ -100,8 +100,8 @@
 |  --> Keeping fight to win!      |
 -----------------------------------
 >>> Now please use your wise to solve this cipher question!
->>> Key number = -27
->>> Encrypted sentence is DMFF1340!
+>>> Key number = -69
+>>> Encrypted sentence is NWPP1340!
 --> Please input your decrypted password: Congratulation! You pass it!
 
 -------Current Condition-------
