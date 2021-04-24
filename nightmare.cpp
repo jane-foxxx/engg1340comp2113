@@ -7,12 +7,11 @@
 #define DIAMOND "\xE2\x99\xA6"
 
 #include "caesar.h"
-#include "fightguardian.h"
-#include "caesar.h"
-#include "ask_death.h"
 #include "check_countdown.h"
-#include "print_current_value.h"
+#include "ask_death.h"
 #include "print_death.h"
+#include "print_current_value.h"
+#include "fightguardian.h"
 #include "print_death_reason.h"
 
 using namespace std;
