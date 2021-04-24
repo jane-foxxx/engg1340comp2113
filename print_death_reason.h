@@ -8,20 +8,18 @@
 
 using namespace std;
 
-//print the current states of the player so that the player can make more choice
-void print_current_value(int hp,int countdown, bool weapon){
-	cout << endl;
-	cout << "-------Current Condition-------" << endl;
-	//hp
-	cout << "|       health point: " << hp <<"       |" << endl;
-	//count down
-	cout << "|       time left: " << (70-countdown) << " min     |" << endl;
-	//weapon
-	if(weapon == true){
-		cout << "|       weapon: stick         |" << endl;
+//print the death reason for each death
+void print_death_reason(int hp,int countdown, bool weapon){
+	//hp <= 0
+	if(hp <= 0){
+		cout << "You die because of no health point." << endl;
 	}
-	else if (weapon == false){
-		cout << "|       weapon: none          |" << endl;
+	//player is defeated by the guardian
+	else if(fightguardian(weapon, hp) == false){
+		cout << "You are defeated by the guardian because you do not have weapon or your health point is lower than 6" << endl;
 	}
-	cout << "-------------------------------" << endl;
+	//countdown > 70
+	else if (countdown > 70){
+		cout << "You fail to escape from NIGHTMARE BEFORE the dawn!" << endl;
+	}
 }
