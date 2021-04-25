@@ -5,7 +5,7 @@
 |  When you react, you find yourself trapped in a Nightmare Space.                                 |
 |  At this moment, the system prompts the sound----------                                          |
 |  --- Welcome to the NIGHTMARE GAME!                                                              |
-|  --- You should leave the tower and across the river to the east before the dawn (in 70 MINUTES) |
+|  --- You should leave the tower and across the river to the east before the dawn (in 50 MINUTES) |
 |  --- Try to survive and escape this nightmare within the set time!                               |
 |  --- Otherwise you will lose your life in NIGHTMARE which directly causes death in the reality.  |
 |  Tip: Beware of the guardian!                                                                    |
@@ -21,7 +21,7 @@
 
 -------Current Condition-------
 |       health point: 5       |
-|       time left: 70 min     |
+|       time left: 50 min     |
 |       weapon: none          |
 -------------------------------
 >>> One bread is on the table in front of you, and the door near the table is squeezing.
@@ -41,7 +41,7 @@ You are defeated by the guardian because you do not have weapon or your health p
 >>> Please input your choice: 
 -------Current Condition-------
 |       health point: 5       |
-|       time left: 70 min     |
+|       time left: 50 min     |
 |       weapon: none          |
 -------------------------------
 >>> One bread is on the table in front of you, and the door near the table is squeezing.
@@ -53,7 +53,7 @@ You are defeated by the guardian because you do not have weapon or your health p
 
 -------Current Condition-------
 |       health point: 5       |
-|       time left: 65 min     |
+|       time left: 45 min     |
 |       weapon: none          |
 -------------------------------
 >>> So you calm down and back to the table.
@@ -64,21 +64,21 @@ You are defeated by the guardian because you do not have weapon or your health p
 
 -------Current Condition-------
 |       health point: 6       |
-|       time left: 55 min     |
+|       time left: 35 min     |
 |       weapon: none          |
 -------------------------------
->>> There is another closing door and staircases.
+>>> You find that there are another closed door and staircases.
 >>> You find that this room seems to have three floors.
->>> SO YOU CHOOSE----------
+>>> SO YOU CHOOSE TO-------------
   A. Go to the third floor
   B. Go to the ground floor
   C. Try to open the closing door
->>> Please input your choice: >>>There is an empty room with only one stick lying on the ground.
->>>You pick up the stick.
+>>> Please input your choice: >>> There is an empty room with only one stick lying on the ground.
+>>> You pick up the stick.
 
 -------Current Condition-------
 |       health point: 6       |
-|       time left: 50 min     |
+|       time left: 30 min     |
 |       weapon: stick         |
 -------------------------------
 >>> Wow! You hear a sound of footsteps in the room with the door slightly closed
@@ -89,13 +89,13 @@ You are defeated by the guardian because you do not have weapon or your health p
 >>> Please input your choice: 
 -------Current Condition-------
 |       health point: 3       |
-|       time left: 50 min     |
+|       time left: 20 min     |
 |       weapon: stick         |
 -------------------------------
 >>> Congratulation! You beat the guardian with the stick!
->>> You go into the guardian's room and find a few things.
->>> There are a lamp, a can of ham, a stick and a compass.
->>> Now you have to choose 3 items out of 4, since your bag is not big enough.
+>>> Now you go into the guardian's room and find a few things.
+>>> There are a lamp, a can of ham, a stick ,a compass and a small bag
+>>> Now you can only choose 3 items out of 4 and put them into the bag, since your bag is not big enough.
 >>> FINALLY YOU CHOOSE------------
    A. The lamp
    B. The can of ham
@@ -104,7 +104,7 @@ You are defeated by the guardian because you do not have weapon or your health p
 >>> Please input your choice: 
 -------Current Condition-------
 |       health point: 3       |
-|       time left: 45 min     |
+|       time left: 15 min     |
 |       weapon: stick         |
 -------------------------------
 --- You take the lamp and go to the ground floor.
@@ -121,14 +121,19 @@ You are defeated by the guardian because you do not have weapon or your health p
 |  >>> Decrypted password:        |
 |  --> Keeping fight to win!2021  |
 -----------------------------------
->>> Now please use your wise to solve this cipher question!
->>> Key number = 40
->>> Encrypted sentence is SBUU1340!
---> Please input your decrypted password: OMG! Not the correct answer~
+*** You have 3 chances to solve this cipher question.
+*** Each chance will take 5 minutes.
+*** Now please use your wise to get the correct password as soon as possible!
+----------------Question-----------------
+|   >>> Key number =  21                |
+|   >>> Encrypted sentence is ZIBB1340! |
+-----------------------------------------
+---> Please input your decrypted password: OMG! Not the correct answer~
 There are 2 more chances.
-Try again: OMG! Not the correct answer~
+---> Try again: OMG! Not the correct answer~
 There are 1 more chances.
-Try again: Three times all wrong
+---> Try again: Three times all wrong
+The door is locked forever...You cannot leave here forever...
 >>> Do you want to re-enter NIGHTMARE or just die :)
 >>> YOU CHOOSE TO---------
    A. Try again
