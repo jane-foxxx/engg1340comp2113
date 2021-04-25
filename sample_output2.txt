@@ -5,7 +5,7 @@
 |  When you react, you find yourself trapped in a Nightmare Space.                                 |
 |  At this moment, the system prompts the sound----------                                          |
 |  --- Welcome to the NIGHTMARE GAME!                                                              |
-|  --- You should leave the tower and across the river to the east before the dawn (in 70 MINUTES) |
+|  --- You should leave the tower and across the river to the east before the dawn (in 50 MINUTES) |
 |  --- Try to survive and escape this nightmare within the set time!                               |
 |  --- Otherwise you will lose your life in NIGHTMARE which directly causes death in the reality.  |
 |  Tip: Beware of the guardian!                                                                    |
@@ -21,7 +21,7 @@
 
 -------Current Condition-------
 |       health point: 5       |
-|       time left: 70 min     |
+|       time left: 50 min     |
 |       weapon: none          |
 -------------------------------
 >>> One bread is on the table in front of you, and the door near the table is squeezing.
@@ -41,7 +41,7 @@ You are defeated by the guardian because you do not have weapon or your health p
 >>> Please input your choice: 
 -------Current Condition-------
 |       health point: 5       |
-|       time left: 70 min     |
+|       time left: 50 min     |
 |       weapon: none          |
 -------------------------------
 >>> One bread is on the table in front of you, and the door near the table is squeezing.
@@ -53,23 +53,23 @@ You are defeated by the guardian because you do not have weapon or your health p
 
 -------Current Condition-------
 |       health point: 5       |
-|       time left: 60 min     |
+|       time left: 40 min     |
 |       weapon: none          |
 -------------------------------
 >>> So you calm down and back to the table.
 >>> NOW YOU CHOOSE TO------------------
   A. Eat the bread and leave the room
   B. Just leave the room
->>> Please input your choice: --- Why don't you eat the bread?
+>>> Please input your choice: --- You directly leave the room.
 
 -------Current Condition-------
 |       health point: 5       |
-|       time left: 55 min     |
+|       time left: 35 min     |
 |       weapon: none          |
 -------------------------------
->>> There is another closing door and staircases.
+>>> You find that there are another closed door and staircases.
 >>> You find that this room seems to have three floors.
->>> SO YOU CHOOSE----------
+>>> SO YOU CHOOSE TO-------------
   A. Go to the third floor
   B. Go to the ground floor
   C. Try to open the closing door
