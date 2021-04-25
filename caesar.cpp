@@ -37,7 +37,7 @@ int caesar(){
 	string data = "abcdefghijklmnopqrstuvwxyz";
 	string data_upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	cout << "----------------Question-----------------" << endl;
-	cout << "|   >>> Key number = " << setfill( ' ' ) << setw(3) << key << "                |"<< endl;
+	cout << "|   >>> Key number = " << setfill( ' ' ) << setw(3) << key << "                |" << endl;
 	
 	string output = "";
 	//Encrypt
@@ -91,7 +91,7 @@ int caesar(){
 			}
 		}
 	}
-	cout << "|   >>> Encrypted sentence is " << output << " |" <<endl;
+	cout << "|   >>> Encrypted sentence is " << output << " |" << endl;
 	cout << "-----------------------------------------" << endl;
 	cout << "---> Please input your decrypted password: ";
 	
