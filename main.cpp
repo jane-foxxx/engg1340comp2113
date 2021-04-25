@@ -19,9 +19,9 @@ int main() {
 	cout << "|                                Time: A.D. 2049                                                   |" << endl;
 	cout << "|  As You are playing the game named VIRTUAL REALITY,  you are attacked by the unknow virus.       |" << endl;
 	cout << "|  When you react, you find yourself trapped in a Nightmare Space.                                 |" << endl;
-    cout << "|  At this moment, the system prompts the sound----------                                          |" << endl;
-    cout << "|  --- Welcome to the NIGHTMARE GAME!                                                              |" << endl;
-    cout << "|  --- You should leave the tower and across the river to the east before the dawn (in 50 MINUTES) |" << endl;
+	cout << "|  At this moment, the system prompts the sound----------                                          |" << endl;
+	cout << "|  --- Welcome to the NIGHTMARE GAME!                                                              |" << endl;
+	cout << "|  --- You should leave the tower and across the river to the east before the dawn (in 50 MINUTES) |" << endl;
 	cout << "|  --- Try to survive and escape this nightmare within the set time!                               |" << endl;
 	cout << "|  --- Otherwise you will lose your life in NIGHTMARE which directly causes death in the reality.  |" << endl;
 	cout << "|  Tip: Beware of the guardian!                                                                    |" << endl;
