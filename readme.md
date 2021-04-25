@@ -57,23 +57,23 @@ Some features implemented to fulfill the 1-5 coding requirements
 
    1. input.txt contains the random input factors.
    
-   There are three example:
-   
-      i. sample_input1.txt
-      
-      ii. sample_input2.txt
-      
-      iii. sample_input3.txt
+      There are three example:
+
+         i. sample_input1.txt
+
+         ii. sample_input2.txt
+
+         iii. sample_input3.txt
 
    2. output.txt contains the results of the random input factors.
    
-   There are three example:
-      
-      i. sample_output1.txt
-      
-      ii. sample_output2.txt
-      
-      iii. sample_output3.txt
+      There are three example:
+
+         i. sample_output1.txt
+
+         ii. sample_output2.txt
+
+         iii. sample_output3.txt
    
    3. The game is based on the response from the player.
 
