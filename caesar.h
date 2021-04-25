@@ -1,19 +1,18 @@
-// caesar.h
-#ifndef CAESAR_H
-#define CAESAR_H
-
 #include <vector>
 #include <iostream>
 #include <string>
 #include <stdlib.h>
 #include <time.h>
+#include <iomanip>
 #define HEART   "\xE2\x99\xA5"
 #define DIAMOND "\xE2\x99\xA6"
+
+#include "function.h"
 
 using namespace std;
 
 int caesar(){
-	cout << DIAMOND << " ************************************************************************************************************* " << DIAMOND << endl;
+    	cout << DIAMOND << " ************************************************************************************************************* " << DIAMOND << endl;
 	cout << "  *  Now you finally found the door with the help of the light, and you found a line engraved on the door———— *" << endl;
 	cout << "  *  Only the person who addresses this cipher can open the door.                                             *" << endl;
 	cout << "  *  The is one sample left by last person who opened the door successfully:                                  *" << endl;
@@ -25,18 +24,21 @@ int caesar(){
 	cout << "|  >>> Decrypted password:        |" << endl;
 	cout << "|  --> Keeping fight to win!2021  |" << endl;
 	cout << "-----------------------------------" << endl;
-	cout << ">>> Now please use your wise to solve this cipher question!" << endl;
+	cout << "*** You have 3 chances to solve this cipher question." << endl;
+	cout << "*** Each chance will take 5 minutes." << endl;
+	cout << "*** Now please use your wise to get the correct password as soon as possible!" << endl;
 	// set random key number 
 	srand((unsigned)time(NULL)); 
 	int a = -100;
 	int b = 100;
 	int key = (rand() % (b-a+1))+ a;
-
+	
 	string input = "ENGG1340!";
 	string data = "abcdefghijklmnopqrstuvwxyz";
 	string data_upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	cout << ">>> Key number = "<< key << endl;
-
+	cout << "----------------Question-----------------" << endl;
+	cout << "|   >>> Key number = " << setfill( ' ' ) << setw(3) << key << "                |"<< endl;
+	
 	string output = "";
 	//Encrypt
 	string::size_type position;
@@ -89,9 +91,10 @@ int caesar(){
 			}
 		}
 	}
-	cout << ">>> Encrypted sentence is " << output << endl;
-	cout << "--> Please input your decrypted password: ";
-
+	cout << "|   >>> Encrypted sentence is " << output << " |" <<endl;
+	cout << "-----------------------------------------" << endl;
+	cout << "---> Please input your decrypted password: ";
+	
 	//Decrypt
 	string input1 = output;
 	string output1;
@@ -156,7 +159,7 @@ int caesar(){
 		}
 		cout << "OMG! Not the correct answer~" << endl;
 		cout << "There are " << 3 - times << " more chances." << endl;
-		cout << "Try again: ";
+		cout << "---> Try again: ";
 		cin >> user_input;
 		if(times == 2){
 			if (user_input == output1){
@@ -165,11 +168,10 @@ int caesar(){
 				break;
 			}
 			cout << "Three times all wrong" << endl;
+			cout << "The door is locked forever...You cannot leave here forever..." << endl;
 			return 4;
 			break;
 		}
 		times += 1;
 	}
 }
-
-#endif
