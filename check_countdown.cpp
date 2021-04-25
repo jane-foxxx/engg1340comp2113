@@ -15,7 +15,7 @@ using namespace std;
 //Time triger
 bool check_countdown(int countdown){
     if (countdown > 50){
-        return false;
+	    return false;
     }
     else{
 	    return true;
