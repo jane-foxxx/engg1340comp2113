@@ -231,22 +231,22 @@ int main() {
         
 		print_current_value(hp, countdown, weapon);
 		if (check_countdown(countdown) == false){
-    		cout << ">>> However, the Dawn is coming, you fail to escape." << endl;
-    		cout << ">>> Do you want to re-enter NIGHTMARE or just die :)" << endl;
-    		cout << ">>> YOU CHOOSE TO--------" << endl;
-    		cout << "   A. Try again" << endl;
-    		cout << "   B. Exit" << endl;
-        	cout << ">>> Please input your choice: ";
-        	char die1;
-    		cin >> die1;
-    		if (die1 == 'A'){
-    			continue;
-    		}
-    		else if (die1 == 'B'){
-    			flag = false;
-    			print_death();
-    			break;
-    		}
+			cout << ">>> However, the Dawn is coming, you fail to escape." << endl;
+			cout << ">>> Do you want to re-enter NIGHTMARE or just die :)" << endl;
+			cout << ">>> YOU CHOOSE TO--------" << endl;
+			cout << "   A. Try again" << endl;
+			cout << "   B. Exit" << endl;
+			cout << ">>> Please input your choice: ";
+			char die1;
+			cin >> die1;
+			if (die1 == 'A'){
+				continue;
+			}
+			else if (die1 == 'B'){
+				flag = false;
+				print_death();
+				break;
+			}
 		}
 
 		//level 5
@@ -278,22 +278,22 @@ int main() {
 		}
 		countdown += 5;
 		if (check_countdown(countdown) == false){
-    		cout << ">>> However, the Dawn is coming, you fail to escape." << endl;
-    		cout << ">>> Do you want to re-enter NIGHTMARE or just die :)" << endl;
-    		cout << ">>> YOU CHOOSE TO--------" << endl;
-    		cout << "   A. Try again" << endl;
-    		cout << "   B. Exit" << endl;
-        	cout << ">>> Please input your choice: ";
-        	char die2;
-    		cin >> die2;
-    		if (die2 == 'A'){
-    			continue;
-    		}
-    		else if (die2 == 'B'){
-    			flag = false;
-    			print_death();
-    			break;
-    		}
+			cout << ">>> However, the Dawn is coming, you fail to escape." << endl;
+			cout << ">>> Do you want to re-enter NIGHTMARE or just die :)" << endl;
+			cout << ">>> YOU CHOOSE TO--------" << endl;
+			cout << "   A. Try again" << endl;
+			cout << "   B. Exit" << endl;
+			cout << ">>> Please input your choice: ";
+			char die2;
+			cin >> die2;
+			if (die2 == 'A'){
+				continue;
+			}
+			else if (die2 == 'B'){
+				flag = false;
+				print_death();
+				break;
+			}
 		}
 		
 		int k = 0;
@@ -317,13 +317,13 @@ int main() {
 		if(temp == false){
 			cout << ">>> Without the lamp, you are lost in NIGHTMARE :(" << endl;
 			cout << endl;
-        	cout << "        ******************************        " << endl;
-        	cout << "              **** YOU DIED! ****             " << endl;
-        	cout << ">>> Do you want to re-enter NIGHTMARE or just die :)" << endl;
-        	cout << ">>> YOU CHOOSE TO--------" << endl;
-        	cout << "   A. Try again" << endl;
-        	cout << "   B. Exit" << endl;
-        	cout << ">>> Please input your choice: ";
+			cout << "        ******************************        " << endl;
+			cout << "              **** YOU DIED! ****             " << endl;
+			cout << ">>> Do you want to re-enter NIGHTMARE or just die :)" << endl;
+			cout << ">>> YOU CHOOSE TO--------" << endl;
+			cout << "   A. Try again" << endl;
+			cout << "   B. Exit" << endl;
+			cout << ">>> Please input your choice: ";
 			char die;
 			cin >> die;
 			if (die == 'A'){
@@ -343,10 +343,10 @@ int main() {
 		}
 		else {
 			cout << ">>> Do you want to re-enter NIGHTMARE or just die :)" << endl;
-        	cout << ">>> YOU CHOOSE TO---------" << endl;
-        	cout << "   A. Try again" << endl;
-        	cout << "   B. Exit" << endl;
-        	cout << ">>> Please input your choice: ";
+			cout << ">>> YOU CHOOSE TO---------" << endl;
+			cout << "   A. Try again" << endl;
+			cout << "   B. Exit" << endl;
+			cout << ">>> Please input your choice: ";
 			char die;
 			cin >> die;
 			if (die == 'A'){
@@ -369,11 +369,11 @@ int main() {
 		}
 		if(temp1 == false){
 			cout << ">>> However, without the compass, you are lost in NIGHTMARE and died in the reality :(" << endl;
-        	cout << ">>> Do you want to re-enter NIGHTMARE or just die :)" << endl;
-        	cout << ">>> YOU CHOOSE TO---------" << endl;
-        	cout << "   A. Try again" << endl;
-        	cout << "   B. Exit" << endl;
-        	cout << ">>> Please input your choice: ";
+			cout << ">>> Do you want to re-enter NIGHTMARE or just die :)" << endl;
+			cout << ">>> YOU CHOOSE TO---------" << endl;
+			cout << "   A. Try again" << endl;
+			cout << "   B. Exit" << endl;
+			cout << ">>> Please input your choice: ";
 			char die;
 			cin >> die;
 			if (die == 'A'){
@@ -396,11 +396,11 @@ int main() {
 			cout << ">>> What a pity! You drown when you are swimming across the river!" << endl;
 			cout << ">>> Tip: hp must be higher than 3 to cross the river." << endl;
 			cout << ">>> Do you want to re-enter NIGHTMARE or just die :)" << endl;
-        	cout << ">>> YOU CHOOSE TO---------" << endl;
-        	cout << "   A. Try again" << endl;
-        	cout << "   B. Exit" << endl;
-        	cout << ">>> Please input your choice: ";
-        	char die;
+			cout << ">>> YOU CHOOSE TO---------" << endl;
+			cout << "   A. Try again" << endl;
+			cout << "   B. Exit" << endl;
+			cout << ">>> Please input your choice: ";
+			char die;
 			cin >> die;
 			if (die == 'A'){
 				continue;
@@ -417,7 +417,7 @@ int main() {
 			cout << ">>> YOU CHOOSE TO--------" << endl;
 			cout << "   A. Try again" << endl;
 			cout << "   B. Exit" << endl;
-        	cout << ">>> Please input your choice: ";
+			cout << ">>> Please input your choice: ";
 			char die;
 			cin >> die;
 			if (die == 'A'){
