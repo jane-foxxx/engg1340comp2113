@@ -3,6 +3,7 @@
 #include <string>
 #include <stdlib.h>
 #include <time.h>
+#include <iomanip>
 #define HEART   "\xE2\x99\xA5"
 #define DIAMOND "\xE2\x99\xA6"
 
@@ -33,8 +34,8 @@ int caesar(){
 	string input = "ENGG1340!";
 	string data = "abcdefghijklmnopqrstuvwxyz";
 	string data_upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	cout << "----------------Question------------------" << endl;
-	cout << "|   >>> Key number = " << key << endl;
+	cout << "----------------Question-----------------" << endl;
+	cout << "|   >>> Key number = " << setfill( ' ' ) << setw(3) << key << "                |"<< endl;
 	
 	string output = "";
 	//Encrypt
@@ -88,7 +89,7 @@ int caesar(){
 			}
 		}
 	}
-	cout << "|   >>> Encrypted sentence is " << output << endl;
+	cout << "|   >>> Encrypted sentence is " << output << " |" <<endl;
 	cout << "-----------------------------------------" << endl;
 	cout << "---> Please input your decrypted password: ";
 	
@@ -216,7 +217,7 @@ void print_current_value(int hp,int countdown, bool weapon){
 	//hp
 	cout << "|       health point: " << hp <<"       |" << endl;
 	//count down
-	cout << "|       time left: " << (50-countdown) << " min     |" << endl;
+	cout << "|       time left: " << setfill( ' ' ) << setw(2) << (50-countdown) << " min     |" << endl;
 	//weapon
 	if(weapon == true){
 		cout << "|       weapon: stick         |" << endl;
@@ -257,7 +258,7 @@ int main() {
 	cout << "|  When you react, you find yourself trapped in a Nightmare Space.                                 |" << endl;
     cout << "|  At this moment, the system prompts the sound----------                                          |" << endl;
     cout << "|  --- Welcome to the NIGHTMARE GAME!                                                              |" << endl;
-    cout << "|  --- You should leave the tower and across the river to the east before the dawn (in 70 MINUTES) |" << endl;
+    cout << "|  --- You should leave the tower and across the river to the east before the dawn (in 50 MINUTES) |" << endl;
 	cout << "|  --- Try to survive and escape this nightmare within the set time!                               |" << endl;
 	cout << "|  --- Otherwise you will lose your life in NIGHTMARE which directly causes death in the reality.  |" << endl;
 	cout << "|  Tip: Beware of the guardian!                                                                    |" << endl;
@@ -463,7 +464,7 @@ int main() {
 				cout << "--- You win!!! You are inevitable!" << endl;
 			}
 		}
-       
+
 		print_current_value(hp, countdown, weapon);
 		//level 5
 		cout << ">>> Congratulation! You beat the guardian with the stick!" << endl;
@@ -609,7 +610,7 @@ int main() {
 			}
 		}
 		if (check_countdown(countdown) == false){
-			cout << ">>> The Dawn is coming, you fail to escape." << endl;
+			cout << ">>> However, the Dawn is coming, you fail to escape." << endl;
 			cout << ">>> Do you want to re-enter NIGHTMARE or just die :)" << endl;
 			cout << ">>> YOU CHOOSE TO--------" << endl;
 			cout << "   A. Try again" << endl;
