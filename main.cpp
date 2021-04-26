@@ -205,7 +205,7 @@ int main() {
 					break;
 				}
 			}
-			else if(fightguardian(weapon, hp, countdown) == true){
+			else {
 				cout << "--- You win!!! You are inevitable!" << endl;
 			}
 		}
@@ -224,7 +224,7 @@ int main() {
 					break;
 				}
 			}
-			else if(fightguardian(weapon, hp, countdown) == true){
+			else {
 				cout << "--- You win!!! You are inevitable!" << endl;
 			}
 		}
