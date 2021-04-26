@@ -16,4 +16,4 @@ ask_death.o: ask_death.cpp function.h
 main.o: main.cpp function.h  
 	g++ $(flag) -c $<
 game: main.o fightguardian.o print_death.o check_countdown.o print_current_value.o print_death_reason.o ask_death.o caesar.o
-	g++ $(flag) $^ -o game
+	g++ $(flag) $^ -o $@
